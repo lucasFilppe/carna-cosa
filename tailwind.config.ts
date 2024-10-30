@@ -11,6 +11,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blueText: '#C1E4F2',
+        pinkText: '#FBDBE3',
+        customPink: '#E94063',
+        customBlue: '#3CBCD8',
+        gold: '#daa520',
+        red: '#ff0000',
+        orange:'#ff6400'
       },
     },
   },
