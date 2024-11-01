@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 export default function CosaLogo() {
   return (
-    <div className='position: left'>
+    <div className="flex justify-start">
       <Image
         src="/cosalogo.jpeg"
         alt="Acme Logo"
-        width={30}
-        height={30}
-        className="rounded-full object-cover w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40"
+        width={50}
+        height={50}
+        className="rounded-full object-cover w-40 h-40 md:w-32 md:h-32 lg:w-24 lg:h-24"
         priority
       />
     </div>
