@@ -57,7 +57,7 @@ export default function Home() {
           >
             <div className="w-full max-w-md my-4">
               <Carousel />
-              <ButtonFloating/>
+              <ButtonFloating />
             </div>
           </section>
 
@@ -93,6 +93,15 @@ export default function Home() {
               <iframe
                 className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/2uGKgNuq7MnKksXiSO6HjB?utm_source=generator"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
+                className="border-radius:12px"
+                src="https://open.spotify.com/embed/artist/6YzSM19LzpLH0nVKKU6Jsy?utm_source=generator"
+                width="100%"
+                height="152"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
@@ -151,6 +160,15 @@ export default function Home() {
                 </span>
               </p>
               <iframe
+                className="border-radius:12px"
+                src="https://open.spotify.com/embed/artist/1mvpEXClANunyiHFtAXCxt?utm_source=generator"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
                 className="rounded-lg h-[300px] sm:h-[152px] w-full"
                 src="https://open.spotify.com/embed/artist/0drNUQoEie9lmZKhCdIE6n?utm_source=generator"
                 frameBorder="0"
@@ -167,6 +185,15 @@ export default function Home() {
               <iframe
                 className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/0IhzJFf4QBEz0ifqLwScKV?utm_source=generator"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
+                className="border-radius:12px"
+                src="https://open.spotify.com/embed/artist/5M5NrRoOEBa49sW1hzKkuH?utm_source=generator"
+                width="100%"
+                height="152"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
