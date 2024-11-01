@@ -77,7 +77,7 @@ export default function Home() {
                 </span>
               </p>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/3CIIaeZuFYrAD6PRVyuO4U?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -85,14 +85,14 @@ export default function Home() {
               ></iframe>
 
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/6YzSM19LzpLH0nVKKU6Jsy?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/2uGKgNuq7MnKksXiSO6HjB?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -115,21 +115,21 @@ export default function Home() {
                 </span>
               </p>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/7gJN8W0589FisSYJS17K54?utm_source=generator&theme=0"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/0pcoadNMmvrUyab1RxWBoV?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/1AuDtbIuaPj9LHnOUMT3C8?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -153,21 +153,21 @@ export default function Home() {
               </p>
 
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/0drNUQoEie9lmZKhCdIE6n?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/2q9wk5fkeU2C9CgCKdh4AN?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/1mvpEXClANunyiHFtAXCxt?utm_source=generator"
                 width="100%"
                 height="152"
@@ -176,14 +176,14 @@ export default function Home() {
                 loading="lazy"
               ></iframe>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/0IhzJFf4QBEz0ifqLwScKV?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/5M5NrRoOEBa49sW1hzKkuH?utm_source=generator"
                 width="100%"
                 height="152"
@@ -208,7 +208,7 @@ export default function Home() {
                 </span>
               </p>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/5nP8x4uEFjAAmDzwOEc9b8?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -216,7 +216,7 @@ export default function Home() {
               ></iframe>
 
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4 "
+                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4 "
                 src="https://open.spotify.com/embed/artist/34dfPo3Zi55yM6oV46q4y7?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
