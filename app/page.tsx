@@ -18,7 +18,6 @@ export default function Home() {
         { emoji: "🦀", text: "Abadá :: Bloco da Praia (Pista)" },
         { emoji: "🌵", text: "Abadá :: Bloco Chapado (Pista)" },
       ],
-      preco: "R$ 1.800",
     },
     {
       titulo: "Pacote PREMIUM",
@@ -29,7 +28,6 @@ export default function Home() {
         { emoji: "🦀", text: "Abadá :: Bloco da Praia (Pista)" },
         { emoji: "🌵", text: "Abadá :: Bloco Chapado (Pista)" },
       ],
-      preco: "R$ 2.000",
     },
     {
       titulo: "Pacote ELITE",
@@ -40,7 +38,6 @@ export default function Home() {
         { emoji: "🦀", text: "Abadá :: Bloco da Praia (Camarote)" },
         { emoji: "🌵", text: "Abadá :: Bloco Chapado (Camarote)" },
       ],
-      preco: "R$ 2.500",
     },
   ];
   return (
@@ -63,15 +60,11 @@ export default function Home() {
 
           {/* Seção Atrações */}
           <section
-            id="atracoes"
+            id="blocos"
             className="min-h-screen flex flex-col justify-center items-center bg-white"
           >
-            <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
-              Atrações
-            </h1>
-
-            <div className="my-6  transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
-              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center text-customBlue">
+            <div className="my-6 mt-4 transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
+              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
                 Bloco caixao
                 <span className="ml-2">
                   <Image
@@ -84,14 +77,15 @@ export default function Home() {
                 </span>
               </p>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full"
+                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/3CIIaeZuFYrAD6PRVyuO4U?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
+
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full"
+                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/6YzSM19LzpLH0nVKKU6Jsy?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -104,12 +98,11 @@ export default function Home() {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
-              
             </div>
 
             {/*bloco cabrobro*/}
             <div className="my-6 transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
-              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center text-customBlue">
+              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
                 Bloco cabróbro
                 <span className="ml-2">
                   <Image
@@ -122,7 +115,7 @@ export default function Home() {
                 </span>
               </p>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full"
+                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/7gJN8W0589FisSYJS17K54?utm_source=generator&theme=0"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -146,7 +139,7 @@ export default function Home() {
 
             {/*bloco praia*/}
             <div className="my-6 transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
-              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center text-customBlue">
+              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
                 Bloco praia
                 <span className="ml-2">
                   <Image
@@ -158,9 +151,9 @@ export default function Home() {
                   />
                 </span>
               </p>
-              
+
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full"
+                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/0drNUQoEie9lmZKhCdIE6n?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -174,7 +167,7 @@ export default function Home() {
                 loading="lazy"
               ></iframe>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full"
+                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/1mvpEXClANunyiHFtAXCxt?utm_source=generator"
                 width="100%"
                 height="152"
@@ -190,7 +183,7 @@ export default function Home() {
                 loading="lazy"
               ></iframe>
               <iframe
-                className="border-radius:12px"
+                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/5M5NrRoOEBa49sW1hzKkuH?utm_source=generator"
                 width="100%"
                 height="152"
@@ -202,7 +195,7 @@ export default function Home() {
 
             {/*bloco chapado*/}
             <div className="my-6 transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
-              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center text-customBlue">
+              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
                 Bloco chapado
                 <span className="ml-2">
                   <Image
@@ -221,15 +214,14 @@ export default function Home() {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
-              
+
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full"
+                className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4 "
                 src="https://open.spotify.com/embed/artist/34dfPo3Zi55yM6oV46q4y7?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
-              
             </div>
 
             {/* Repita para cada bloco de conteúdo */}
@@ -451,19 +443,20 @@ export default function Home() {
       {/* Seção Vendedores Oficiais */}
       <section
         id="vendedoresOficiais"
-        className="min-h-screen flex flex-col justify-center items-center bg-white mt-20"
+        className="min-h-screen flex flex-col justify-center items-center bg-white mt-20 px-4"
       >
-        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue mb-8">
+        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue mb-8 text-center">
           Vendedores oficiais
         </h1>
-        <div className="flex flex-col sm:flex-row items-center justify-center p-6 max-w-xs w-full mx-auto sm:max-w-2xl sm:gap-6 gap-y-6 sm:gap-y-0">
+        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 w-full max-w-md sm:max-w-3xl mx-auto">
           {/* Card de vendedor */}
-          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[350px] w-full sm:w-1/2">
-            <div className="w-30 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative mb-4">
+          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[350px] w-full sm:w-[48%] lg:w-[40%]">
+            <div className="relative mb-4">
               <Image
                 src="/joaopaulomeneses.jpg"
                 alt="foto de João Paulo"
-                fill
+                width={96}
+                height={96}
                 className="rounded-full object-cover"
                 priority
               />
@@ -477,12 +470,13 @@ export default function Home() {
           </div>
 
           {/* Card do próximo vendedor */}
-          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[350px] w-full sm:w-1/2">
-            <div className="w-30 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative mb-4">
+          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[350px] w-full sm:w-[48%] lg:w-[40%]">
+            <div className="relative mb-4 w-full flex justify-center">
               <Image
                 src="/arkimedes.jpg"
-                alt="foto de Lucas Filipe"
-                fill
+                alt="foto de Pedro da Mata"
+                width={96}
+                height={96}
                 className="rounded-full object-cover"
                 priority
               />

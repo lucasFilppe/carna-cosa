@@ -8,11 +8,10 @@ interface Pacote {
   titulo: string;
   tipo: string;
   items: Item[];
-  preco?: string;
 }
 
 // Componente PacoteCard usando export default
-export default function PacoteCard({ titulo, tipo, items, preco }: Pacote) {
+export default function PacoteCard({ titulo, tipo, items}: Pacote) {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 mb-6">
       <h2 className="text-2xl font-bold text-pink-600">{titulo}</h2>
@@ -25,11 +24,6 @@ export default function PacoteCard({ titulo, tipo, items, preco }: Pacote) {
           </li>
         ))}
       </ul>
-      {preco && (
-        <p className="text-xl font-semibold text-gray-800 mt-4">
-          {preco}
-        </p>
-      )}
     </div>
   );
 }

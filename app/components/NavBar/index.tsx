@@ -43,11 +43,11 @@ export default function NavBar() {
               </li>
               <li>
                 <a
-                  href="#atracoes"
+                  href="#blocos"
                   className="text-base hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
                   style={{ textDecorationThickness: "3px" }}
                 >
-                  Atrações
+                  Blocos
                 </a>
               </li>
               <li>
