@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
 const images = [
-  '/festas/image1.jpg',
-  '/festas/image2.jpg',
-  '/festas/image3.jpg',
-  '/festas/image4.jpg',
-  '/festas/image5.jpg',
-  '/festas/image6.jpg',
+  '/festas/image-1.jpg',
+  '/festas/image-2.jpg',
+  '/festas/image-3.jpg',
+  '/festas/image-4.jpg',
+  '/festas/image-5.jpg',
+  '/festas/image-6.jpg',
 ];
 
 const ImageGallery = () => {
@@ -20,7 +20,8 @@ const ImageGallery = () => {
               alt={`Imagem ${index + 1}`}
               width={300}
               height={300}
-              className="object-cover w-full h-full"
+              className="object-cover"
+
             />
           </div>
         ))}
