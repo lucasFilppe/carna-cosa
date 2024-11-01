@@ -1,22 +1,61 @@
 import Image from "next/image";
 import NavBar from "./components/NavBar/page";
 import { FaWhatsappSquare } from "react-icons/fa";
+import PacoteCard from "./components/PacoteCard";
+import { Pacote } from "./types/Pacote";
+import Carousel from "./components/Carrocel";
 
 export default function Home() {
+  const pacotes: Pacote[] = [
+    {
+      titulo: "Pacote VIP",
+      tipo: "Blocos na pista",
+      items: [
+        { emoji: "⚰", text: "Abadá :: Bloco do Caixão (Pista)" },
+        { emoji: "🦐", text: "Abadá :: Bloco Cabrobró (Pista)" },
+        { emoji: "🦀", text: "Abadá :: Bloco da Praia (Pista)" },
+        { emoji: "🌵", text: "Abadá :: Bloco Chapado (Pista)" },
+      ],
+      preco: "R$ 1.800",
+    },
+    {
+      titulo: "Pacote PREMIUM",
+      tipo: "Blocos na pista e camarote",
+      items: [
+        { emoji: "⚰", text: "Abadá :: Bloco do Caixão (Camarote)" },
+        { emoji: "🦐", text: "Abadá :: Bloco Cabrobró (Camarote)" },
+        { emoji: "🦀", text: "Abadá :: Bloco da Praia (Pista)" },
+        { emoji: "🌵", text: "Abadá :: Bloco Chapado (Pista)" },
+      ],
+      preco: "R$ 2.000",
+    },
+    {
+      titulo: "Pacote ELITE",
+      tipo: "Blocos no camarote",
+      items: [
+        { emoji: "⚰", text: "Abadá :: Bloco do Caixão (Camarote)" },
+        { emoji: "🦐", text: "Abadá :: Bloco Cabrobró (Camarote)" },
+        { emoji: "🦀", text: "Abadá :: Bloco da Praia (Camarote)" },
+        { emoji: "🌵", text: "Abadá :: Bloco Chapado (Camarote)" },
+      ],
+      preco: "R$ 2.500",
+    },
+  ];
   return (
     <div className="min-h-screen flex flex-col items-center font-[family-name:var(--font-geist-sans)] overflow-hidden">
       <div className="w-full">
+        {/* ajuste a margem conforme necessário */}
         <NavBar />
-        <div className="pt-16">
+
+        <div className="">
           {/* Seção Início */}
           <section
             id="inicio"
-            className="min-h-screen flex flex-col justify-center items-center bg-white"
+            className="flex flex-col justify-center items-center bg-white py-8 pt-16 md:pt-20"
           >
-            <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
-              O MELHOR CARNAVAL DA SUA VIDA
-            </h1>
-            <p className="mt-4 text-lg sm:text-xl">Aqui é a seção de início.</p>
+            <div className="w-full max-w-md my-4">
+              <Carousel />
+            </div>
           </section>
 
           {/* Seção Atrações */}
@@ -164,232 +203,255 @@ export default function Home() {
             {/* Repita para cada bloco de conteúdo */}
           </section>
 
-          {/* Seção Fotos */}
+          {/* Seção Pacotes */}
           <section
-            id="fotos"
+            id="pacotes"
             className="min-h-screen flex flex-col justify-center items-center bg-white"
           >
-            <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
-              Galeria de Fotos
-            </h1>
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 mt-6">
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-
-              <a
-                href="/foto1-cosa.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-32 h-32 sm:w-64 sm:h-64"
-              >
-                <Image
-                  src="/foto1-cosa.jpg"
-                  alt="Post 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
-                />
-              </a>
-              {/* Repita para cada imagem */}
-            </div>
-          </section>
-
-          {/* Seção Vendedores Oficiais */}
-          <section
-            id="vendedoresOficiais"
-            className="min-h-screen flex flex-col justify-center items-center bg-white mt-20"
-          >
-            <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
-              Vendedores oficiais
-            </h1>
-            <div className="flex flex-col sm:flex-row items-center justify-center p-6 max-w-xs w-full mx-auto sm:max-w-2xl sm:gap-6 gap-y-6 sm:gap-y-0">
-              {/* Card de vendedor */}
-              <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[300px] w-full sm:w-1/2">
-                <div className="w-24 h-24 sm:w-32 sm:h-32 relative mb-4">
-                  <Image
-                    src="/joaopaulomeneses.jpg"
-                    alt="foto de João Paulo"
-                    fill
-                    className="rounded-full object-cover"
-                    priority
-                  />
-                </div>
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center">
-                  João Paulo
-                </h2>
-                <button className="mt-4 flex items-center gap-2 hover:bg-green-400 text-white font-bold rounded">
-                  <FaWhatsappSquare className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-                </button>
+            <div className="bg-gray-100 min-h-screen p-8">
+              <h1 className="text-4xl font-bold text-center text-customBlue mb-8">
+                Todos os Pacotes Incluem:
+              </h1>
+              <div className="max-w-4xl mx-auto mb-10">
+                <ul className="list-disc list-inside text-lg text-gray-700">
+                  <li>🏠 5 dias de Hospedagem com almoço</li>
+                  <li>🍻 24h de Open Bar durante todos os dias</li>
+                  <li>🎭 6 Festas exclusivas</li>
+                  <li>🌟 Acesso aos 4 maiores blocos de Ouro Preto</li>
+                  <li>👮🏻 Assistência 24h - Equipe de segurança e limpeza</li>
+                  <li>👓 Kit Folia - Brindes personalizados</li>
+                </ul>
               </div>
-              {/* Repita para o próximo vendedor */}
+              <div className="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {pacotes.map((pacote, index) => (
+                  <PacoteCard key={index} {...pacote} />
+                ))}
+              </div>
 
-              <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[300px] w-full sm:w-1/2">
-                <div className="w-24 h-24 sm:w-32 sm:h-32 relative mb-4">
-                  <Image
-                    src="/arkimedes.jpg"
-                    alt="foto de Lucas Filipe"
-                    fill
-                    className="rounded-full object-cover"
-                    priority
-                  />
-                </div>
-                <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center">
-                  Lucas Filipe
-                </h2>
-                <button className="mt-4 flex items-center gap-2 hover:bg-green-400 text-white font-bold rounded">
-                  <FaWhatsappSquare className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+              {/* Botão de Comprar Pacote */}
+              <div className="max-w-4xl mx-auto mt-10 text-center">
+                <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
+                  Comprar Pacote
                 </button>
               </div>
             </div>
-          </section>
-
-          {/* Seção Informações */}
-          <section
-            id="informacoes"
-            className="min-h-screen flex flex-col justify-center items-center bg-white"
-          >
-            <h1 className="text-3xl sm:text-4xl font-bold">Informações</h1>
-            <p className="mt-4 text-lg sm:text-xl">
-              Aqui é a seção de informações.
-            </p>
           </section>
         </div>
       </div>
 
+      {/* Seção Fotos */}
+      <section
+        id="fotos"
+        className="min-h-screen flex flex-col justify-center items-center bg-white"
+      >
+        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
+          Galeria de Fotos
+        </h1>
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 mt-6">
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+
+          <a
+            href="/foto1-cosa.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-32 h-32 sm:w-64 sm:h-64"
+          >
+            <Image
+              src="/foto1-cosa.jpg"
+              alt="Post 1"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+            />
+          </a>
+          {/* Repita para cada imagem */}
+        </div>
+      </section>
+
+      {/* Seção Vendedores Oficiais */}
+      <section
+        id="vendedoresOficiais"
+        className="min-h-screen flex flex-col justify-center items-center bg-white mt-20"
+      >
+        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
+          Vendedores oficiais
+        </h1>
+        <div className="flex flex-col sm:flex-row items-center justify-center p-6 max-w-xs w-full mx-auto sm:max-w-2xl sm:gap-6 gap-y-6 sm:gap-y-0">
+          {/* Card de vendedor */}
+          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[300px] w-full sm:w-1/2">
+            <div className="w-24 h-24 sm:w-32 sm:h-32 relative mb-4">
+              <Image
+                src="/joaopaulomeneses.jpg"
+                alt="foto de João Paulo"
+                fill
+                className="rounded-full object-cover"
+                priority
+              />
+            </div>
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center text-white">
+              João Paulo
+            </h2>
+            <button className="mt-4 flex items-center gap-2 hover:bg-green-400 text-white font-bold rounded">
+              <FaWhatsappSquare className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+            </button>
+          </div>
+          {/* Repita para o próximo vendedor */}
+
+          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[300px] w-full sm:w-1/2">
+            <div className="w-24 h-24 sm:w-32 sm:h-32 relative mb-4">
+              <Image
+                src="/arkimedes.jpg"
+                alt="foto de Lucas Filipe"
+                fill
+                className="rounded-full object-cover"
+                priority
+              />
+            </div>
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center text-white">
+              Lucas Filipe
+            </h2>
+            <button className="mt-4 flex items-center gap-2 hover:bg-green-400 text-white font-bold rounded">
+              <FaWhatsappSquare className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="flex flex-col items-center bg-zinc-50 text-center text-surface w-full bg-blueText">
+      <footer className="w-full bg-blueText flex flex-col items-center bg-zinc-50 text-center text-surface ">
         <div className="container px-6 pt-6">
           <div className="mb-6 flex justify-center space-x-2">
             {/* Ícone do Facebook */}

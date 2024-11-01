@@ -10,7 +10,7 @@ export default function NavBar() {
 
   return (
     <div>
-      <nav className="bg-customBlue text-white p-4 fixed w-full z-10 w-full">
+      <nav className="bg-customBlue text-white p-2 fixed w-full z-10 w-full">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo na esquerda */}
           <div className="flex items-center space-x-4">
@@ -52,11 +52,11 @@ export default function NavBar() {
               </li>
               <li>
                 <a
-                  href="#blocos"
+                  href="#pacotes"
                   className="text-2xl hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
                   style={{ textDecorationThickness: "3px" }}
                 >
-                  Blocos
+                  Pacotes
                 </a>
               </li>
               <li>
