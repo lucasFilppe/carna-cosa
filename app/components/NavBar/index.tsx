@@ -1,7 +1,7 @@
 "use client"; // Adicione esta linha no início do arquivo
 import { MdMenu } from "react-icons/md";
 import { useState } from "react";
-import CosaLogo from "../Logo/page";
+import CosaLogo from "../Logo";
 import { Transition } from "@headlessui/react";
 import { AiOutlineClose } from "react-icons/ai";
 

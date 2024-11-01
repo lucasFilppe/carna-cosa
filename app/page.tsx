@@ -1,8 +1,10 @@
 import Image from "next/image";
-import NavBar from "./components/NavBar/page";
+import NavBar from "./components/NavBar";
 import { FaWhatsappSquare } from "react-icons/fa";
 import PacoteCard from "./components/PacoteCard";
 import { Pacote } from "./types/Pacote";
+import ImageGallery from "./components/Festas";
+import ButtonFloating from "./components/ButtonFloating";
 import Carousel from "./components/Carrocel";
 
 export default function Home() {
@@ -55,6 +57,7 @@ export default function Home() {
           >
             <div className="w-full max-w-md my-4">
               <Carousel />
+              <ButtonFloating/>
             </div>
           </section>
 
@@ -231,13 +234,28 @@ export default function Home() {
               {/* Botão de Comprar Pacote */}
               <div className="max-w-4xl mx-auto mt-10 text-center">
                 <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
-                  Comprar Pacote
+                  Comprar pacote
                 </button>
               </div>
             </div>
           </section>
         </div>
       </div>
+
+      <section
+        id="festas"
+        className="min-h-screen flex flex-col justify-center items-center bg-white"
+      >
+        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
+          Festas
+        </h1>
+        <ImageGallery />
+        <div className="max-w-4xl mx-auto mt-10 text-center">
+          <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
+            Comprar festas
+          </button>
+        </div>
+      </section>
 
       {/* Seção Fotos */}
       <section
@@ -406,13 +424,13 @@ export default function Home() {
         id="vendedoresOficiais"
         className="min-h-screen flex flex-col justify-center items-center bg-white mt-20"
       >
-        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
+        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue mb-8">
           Vendedores oficiais
         </h1>
         <div className="flex flex-col sm:flex-row items-center justify-center p-6 max-w-xs w-full mx-auto sm:max-w-2xl sm:gap-6 gap-y-6 sm:gap-y-0">
           {/* Card de vendedor */}
-          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[300px] w-full sm:w-1/2">
-            <div className="w-24 h-24 sm:w-32 sm:h-32 relative mb-4">
+          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[350px] w-full sm:w-1/2">
+            <div className="w-30 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative mb-4">
               <Image
                 src="/joaopaulomeneses.jpg"
                 alt="foto de João Paulo"
@@ -424,14 +442,14 @@ export default function Home() {
             <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center text-white">
               João Paulo
             </h2>
-            <button className="mt-4 flex items-center gap-2 hover:bg-green-400 text-white font-bold rounded">
+            <button className="mt-4 flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold rounded p-2 transition-all duration-300">
               <FaWhatsappSquare className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
             </button>
           </div>
-          {/* Repita para o próximo vendedor */}
 
-          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[300px] w-full sm:w-1/2">
-            <div className="w-24 h-24 sm:w-32 sm:h-32 relative mb-4">
+          {/* Card do próximo vendedor */}
+          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[350px] w-full sm:w-1/2">
+            <div className="w-30 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative mb-4">
               <Image
                 src="/arkimedes.jpg"
                 alt="foto de Lucas Filipe"
@@ -441,9 +459,9 @@ export default function Home() {
               />
             </div>
             <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center text-white">
-              Lucas Filipe
+              Pedro da Mata
             </h2>
-            <button className="mt-4 flex items-center gap-2 hover:bg-green-400 text-white font-bold rounded">
+            <button className="mt-4 flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold rounded p-2 transition-all duration-300">
               <FaWhatsappSquare className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
             </button>
           </div>
