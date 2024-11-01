@@ -91,21 +91,20 @@ export default function Home() {
                 loading="lazy"
               ></iframe>
               <iframe
+                className="rounded-lg h-[300px] sm:h-[152px] w-full"
+                src="https://open.spotify.com/embed/artist/6YzSM19LzpLH0nVKKU6Jsy?utm_source=generator"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
                 className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/2uGKgNuq7MnKksXiSO6HjB?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
-              <iframe
-                className="border-radius:12px"
-                src="https://open.spotify.com/embed/artist/6YzSM19LzpLH0nVKKU6Jsy?utm_source=generator"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
+              
             </div>
 
             {/*bloco cabrobro*/}
@@ -159,15 +158,7 @@ export default function Home() {
                   />
                 </span>
               </p>
-              <iframe
-                className="border-radius:12px"
-                src="https://open.spotify.com/embed/artist/1mvpEXClANunyiHFtAXCxt?utm_source=generator"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
+              
               <iframe
                 className="rounded-lg h-[300px] sm:h-[152px] w-full"
                 src="https://open.spotify.com/embed/artist/0drNUQoEie9lmZKhCdIE6n?utm_source=generator"
@@ -178,6 +169,15 @@ export default function Home() {
               <iframe
                 className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/2q9wk5fkeU2C9CgCKdh4AN?utm_source=generator"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
+                className="rounded-lg h-[300px] sm:h-[152px] w-full"
+                src="https://open.spotify.com/embed/artist/1mvpEXClANunyiHFtAXCxt?utm_source=generator"
+                width="100%"
+                height="152"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
@@ -200,7 +200,7 @@ export default function Home() {
               ></iframe>
             </div>
 
-            {/*bloco praia*/}
+            {/*bloco chapado*/}
             <div className="my-6 transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
               <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center text-customBlue">
                 Bloco chapado
@@ -215,19 +215,21 @@ export default function Home() {
                 </span>
               </p>
               <iframe
-                className="rounded-lg h-[300px] sm:h-[152px] w-full"
-                src="https://open.spotify.com/embed/artist/34dfPo3Zi55yM6oV46q4y7?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-              <iframe
                 className="rounded-lg h-[300px] sm:h-[152px] w-full mt-4"
                 src="https://open.spotify.com/embed/artist/5nP8x4uEFjAAmDzwOEc9b8?utm_source=generator"
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
+              
+              <iframe
+                className="rounded-lg h-[300px] sm:h-[152px] w-full"
+                src="https://open.spotify.com/embed/artist/34dfPo3Zi55yM6oV46q4y7?utm_source=generator"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              
             </div>
 
             {/* Repita para cada bloco de conteúdo */}

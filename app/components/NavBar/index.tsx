@@ -35,7 +35,7 @@ export default function NavBar() {
               <li>
                 <a
                   href="#inicio"
-                  className="text-2xl hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
+                  className="text-base hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
                   style={{ textDecorationThickness: "3px" }}
                 >
                   Início
@@ -44,7 +44,7 @@ export default function NavBar() {
               <li>
                 <a
                   href="#atracoes"
-                  className="text-2xl hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
+                  className="text-base hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
                   style={{ textDecorationThickness: "3px" }}
                 >
                   Atrações
@@ -53,7 +53,7 @@ export default function NavBar() {
               <li>
                 <a
                   href="#pacotes"
-                  className="text-2xl hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
+                  className="text-base hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
                   style={{ textDecorationThickness: "3px" }}
                 >
                   Pacotes
@@ -62,7 +62,7 @@ export default function NavBar() {
               <li>
                 <a
                   href="#festas"
-                  className="text-2xl hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
+                  className="text-base hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
                   style={{ textDecorationThickness: "3px" }}
                 >
                   Festas
@@ -71,7 +71,7 @@ export default function NavBar() {
               <li>
                 <a
                   href="#fotos"
-                  className="text-2xl hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
+                  className="text-base hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
                   style={{ textDecorationThickness: "3px" }}
                 >
                   Fotos
@@ -80,7 +80,7 @@ export default function NavBar() {
               <li>
                 <a
                   href="#vendedoresOficiais"
-                  className="text-2xl hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
+                  className="text-base hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
                   style={{ textDecorationThickness: "3px" }}
                 >
                   Vendedores oficiais
@@ -89,7 +89,7 @@ export default function NavBar() {
               <li>
                 <a
                   href="#informacoes"
-                  className="text-2xl hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
+                  className="text-base hover:text-gray-200 hover:underline hover:underline-offset-1 focus:text-gray-200 focus:underline focus:underline-offset-1 active:text-gray-200 active:underline active:underline-offset-1"
                   style={{ textDecorationThickness: "3px" }}
                 >
                   Informações
