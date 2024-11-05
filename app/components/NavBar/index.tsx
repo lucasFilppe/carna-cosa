@@ -18,7 +18,7 @@ export default function NavBar() {
           </div>
 
           {/* Botão de menu hambúrguer para dispositivos móveis */}
-          <div className="md:hidden ml-auto">
+          <div className="md:hidden flex items-end justify-end absolute right-0 p-4">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="focus:outline-none"
@@ -29,8 +29,8 @@ export default function NavBar() {
           </div>
 
           {/* Links de navegação - Visível em telas médias e maiores */}
-          <div className="mr-20 text-sm md:text-base">
-            <ul className="hidden md:flex space-x-4">
+          <div className="hidden md:flex flex-1 justify-center text-sm md:text-base">
+            <ul className="flex space-x-4">
               <li>
                 <a
                   href="#inicio"
