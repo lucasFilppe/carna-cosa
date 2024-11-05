@@ -23,9 +23,8 @@ export default function NavBar() {
               onClick={() => setIsOpen(!isOpen)}
               className="focus:outline-none"
             >
-              {/* Ícone de hambúrguer */}
-              <MdMenu size={50}/>
-              
+              {/* Condicional para alternar entre os ícones */}
+              {isOpen ? <AiOutlineClose size={50} /> : <MdMenu size={50} />}
             </button>
           </div>
 
@@ -99,7 +98,6 @@ export default function NavBar() {
           </div>
         </div>
 
-        {/* Menu dropdown para dispositivos móveis */}
         {isOpen && (
           <Transition
             show={isOpen}
@@ -110,16 +108,9 @@ export default function NavBar() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="fixed inset-0 z-50 flex items-center justify-center md:hidden">
-              {/* O modal é ocultado em dispositivos maiores */}
-              <div className="bg-white p-6 w-11/12 max-w-sm overflow-y-auto h-3/4">
-                <button
-                  onClick={() => setIsOpen(false)} // Fechar o modal ao clicar
-                  className="mb-4 text-red-500"
-                >
-                  <AiOutlineClose size={30}/>
-                </button>
-                <ul className="md:hidden bg-customBlue space-y-2 mt-4 p-4">
+            <div className="fixed inset-x-0 flex items-end justify-end md:hidden">
+              <div className="bg-white rounded-t-lg inset-x-0 justify-end">
+                <ul className="md:hidden bg-customBlue p-4">
                   <li>
                     <a
                       href="#inicio"
@@ -192,4 +183,3 @@ export default function NavBar() {
     </div>
   );
 }
-
