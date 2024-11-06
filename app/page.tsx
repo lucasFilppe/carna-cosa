@@ -42,11 +42,9 @@ export default function Home() {
   ];
   return (
     <div className="min-h-screen flex flex-col items-center font-[family-name:var(--font-geist-sans)] overflow-hidden">
-      <div className="w-full">
-        {/* ajuste a margem conforme necessário */}
+        {/* Ajuste a margem conforme necessário */}
         <NavBar />
 
-        <div className="">
           {/* Seção Início */}
           <section
             id="inicio"
@@ -58,173 +56,61 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Seção Atrações */}
+          {/* Seção blocos */}
           <section
             id="blocos"
-            className="min-h-screen flex flex-col justify-center items-center bg-white"
+            className="flex flex-col justify-center items-center bg-white w-full"
           >
-            <div className="my-6 mt-4 transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
-              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
-                Bloco caixao
-                <span className="ml-2">
-                  <Image
-                    src="/bloco-caixao.jpg"
-                    alt="logo bloco do caixao"
-                    width={30}
-                    height={30}
-                    className="rounded-full"
-                  />
-                </span>
-              </p>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/3CIIaeZuFYrAD6PRVyuO4U?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/6YzSM19LzpLH0nVKKU6Jsy?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/2uGKgNuq7MnKksXiSO6HjB?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </div>
-
-            {/*bloco cabrobro*/}
-            <div className="my-6 transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
-              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
-                Bloco cabróbro
-                <span className="ml-2">
-                  <Image
-                    src="/bloco-cabrobro.jpg"
-                    alt="logo bloco do cabrobro"
-                    width={30}
-                    height={30}
-                    className="rounded-full"
-                  />
-                </span>
-              </p>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/7gJN8W0589FisSYJS17K54?utm_source=generator&theme=0"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/0pcoadNMmvrUyab1RxWBoV?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/1AuDtbIuaPj9LHnOUMT3C8?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </div>
-
-            {/*bloco praia*/}
-            <div className="my-6 transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
-              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
-                Bloco praia
-                <span className="ml-2">
-                  <Image
-                    src="/bloco-praia.jpg"
-                    alt="logo bloco praia"
-                    width={30}
-                    height={30}
-                    className="rounded-full"
-                  />
-                </span>
-              </p>
-
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/0drNUQoEie9lmZKhCdIE6n?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/2q9wk5fkeU2C9CgCKdh4AN?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/1mvpEXClANunyiHFtAXCxt?utm_source=generator"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/0IhzJFf4QBEz0ifqLwScKV?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/5M5NrRoOEBa49sW1hzKkuH?utm_source=generator"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </div>
-
-            {/*bloco chapado*/}
-            <div className="my-6 transform transition duration-300 ease-in-out hover:scale-110 rounded-lg w-full max-w-xl p-4">
-              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
-                Bloco chapado
-                <span className="ml-2">
-                  <Image
-                    src="/bloco-chapado.jpg"
-                    alt="logo bloco chapado"
-                    width={30}
-                    height={30}
-                    className="rounded-full"
-                  />
-                </span>
-              </p>
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                src="https://open.spotify.com/embed/artist/5nP8x4uEFjAAmDzwOEc9b8?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-
-              <iframe
-                className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4 "
-                src="https://open.spotify.com/embed/artist/34dfPo3Zi55yM6oV46q4y7?utm_source=generator"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </div>
-
-            {/* Repita para cada bloco de conteúdo */}
+            {[
+              {
+                title: "Bloco caixao",
+                imgSrc: "/bloco-caixao.jpg",
+                spotifyLinks: [
+                  "https://open.spotify.com/embed/artist/3CIIaeZuFYrAD6PRVyuO4U?utm_source=generator",
+                  "https://open.spotify.com/embed/artist/6YzSM19LzpLH0nVKKU6Jsy?utm_source=generator",
+                  "https://open.spotify.com/embed/artist/2uGKgNuq7MnKksXiSO6HjB?utm_source=generator",
+                ],
+              },
+              {
+                title: "Bloco cabróbro",
+                imgSrc: "/bloco-cabrobro.jpg",
+                spotifyLinks: [
+                  "https://open.spotify.com/embed/artist/7gJN8W0589FisSYJS17K54?utm_source=generator&theme=0",
+                  "https://open.spotify.com/embed/artist/0pcoadNMmvrUyab1RxWBoV?utm_source=generator",
+                  "https://open.spotify.com/embed/artist/1AuDtbIuaPj9LHnOUMT3C8?utm_source=generator",
+                ],
+              },
+              // Add other blocks similarly here
+            ].map((bloco, index) => (
+              <div
+                key={index}
+                className="my-6  rounded-lg w-full max-w-xl p-4"
+              >
+                <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
+                  {bloco.title}
+                  <span className="ml-2">
+                    <Image
+                      src={bloco.imgSrc}
+                      alt={`logo ${bloco.title}`}
+                      width={30}
+                      height={30}
+                      className="rounded-full"
+                    />
+                  </span>
+                </p>
+                {bloco.spotifyLinks.map((link, i) => (
+                  <iframe
+                    key={i}
+                    className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
+                    src={link}
+                    frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    style={{ width: '100%' }} // Adiciona estilo inline para garantir 100% de largura
+                  ></iframe>
+                ))}
+              </div>
+            ))}
           </section>
 
           {/* Seção Pacotes */}
@@ -260,8 +146,6 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </div>
-      </div>
 
       <section
         id="festas"
