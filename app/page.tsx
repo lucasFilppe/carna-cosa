@@ -334,8 +334,8 @@ export default function Home() {
         </h1>
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 w-full max-w-md sm:max-w-3xl mx-auto">
           {/* Card de vendedor */}
-          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[350px] w-full sm:w-[48%] lg:w-[40%]">
-            <div className="relative mb-4">
+          <div className="bg-white flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[250px] w-full sm:w-[48%]">
+            <div className="relative w-full flex justify-center">
               <Image
                 src="/joaopaulomeneses.jpg"
                 alt="foto de João Paulo"
@@ -345,17 +345,17 @@ export default function Home() {
                 priority
               />
             </div>
-            <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center text-white">
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center text-customBlue">
               João Paulo
             </h2>
-            <button className="mt-4 flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold rounded p-2 transition-all duration-300">
-              <FaWhatsappSquare className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+            <button className="flex items-center text-white font-bold rounded p-2 transition-all duration-300">
+              <FaWhatsappSquare className="w-12 h-12 text-green-400" />
             </button>
           </div>
 
           {/* Card do próximo vendedor */}
-          <div className="bg-customBlue flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[350px] w-full sm:w-[48%] lg:w-[40%]">
-            <div className="relative mb-4 w-full flex justify-center">
+          <div className="bg-white flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[250px] min-h-[250px] w-full sm:w-[48%]">
+            <div className="relative w-full flex justify-center">
               <Image
                 src="/arkimedes.jpg"
                 alt="foto de Pedro da Mata"
@@ -365,11 +365,11 @@ export default function Home() {
                 priority
               />
             </div>
-            <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center text-white">
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-center text-customBlue">
               Pedro da Mata
             </h2>
-            <button className="mt-4 flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold rounded p-2 transition-all duration-300">
-              <FaWhatsappSquare className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+            <button className="flex items-center text-white font-bold rounded p-2 transition-all duration-300">
+              <FaWhatsappSquare className="w-12 h-12 text-green-400" />
             </button>
           </div>
         </div>
