@@ -11,17 +11,16 @@ const images = [
 
 const ImageGallery = () => {
   return (
-    <div className="container mx-auto p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+    <div className="container mx-auto p-7">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {images.map((src, index) => (
-          <div key={index} className="overflow-hidden rounded-lg shadow-md">
+          <div key={index} className="relative overflow-hidden rounded-lg shadow-md w-full h-60">
             <Image
               src={src}
               alt={`Imagem ${index + 1}`}
-              width={300}
-              height={300}
-              className="object-cover"
-
+              layout="fill"         // Faz com que a imagem preencha o contêiner completamente
+              objectFit="cover"     // Ajusta a imagem para cobrir o contêiner sem distorção
+              className="rounded-lg" // Mantém as bordas arredondadas para cada imagem
             />
           </div>
         ))}
@@ -31,4 +30,5 @@ const ImageGallery = () => {
 };
 
 export default ImageGallery;
+
 

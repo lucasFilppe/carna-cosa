@@ -41,14 +41,14 @@ export default function Home() {
     },
   ];
   return (
-    <div className="min-h-screen flex flex-col items-center font-[family-name:var(--font-geist-sans)] overflow-hidden">
+    <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)] overflow-hidden">
         {/* Ajuste a margem conforme necessário */}
         <NavBar />
 
           {/* Seção Início */}
           <section
             id="inicio"
-            className="flex flex-col justify-center items-center bg-white py-8 pt-16 md:pt-20"
+            className="min-h-screen flex flex-col justify-center items-center bg-gray-100 m-5"
           >
             <div className="w-full max-w-md my-4">
               <Carousel />
@@ -59,7 +59,7 @@ export default function Home() {
           {/* Seção blocos */}
           <section
             id="blocos"
-            className="flex flex-col justify-center items-center bg-white w-full"
+            className="min-h-screen flex flex-col justify-center items-center bg-gray-100 m-5"
           >
             {[
               {
@@ -116,10 +116,10 @@ export default function Home() {
           {/* Seção Pacotes */}
           <section
             id="pacotes"
-            className="min-h-screen flex flex-col justify-center items-center bg-white"
+            className="min-h-screen flex flex-col justify-center items-center bg-gray-100 m-5"
           >
             <div className="bg-gray-100 min-h-screen p-8">
-              <h1 className="text-4xl font-bold text-center text-customBlue mb-8">
+              <h1 className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
                 Todos os Pacotes Incluem:
               </h1>
               <div className="max-w-4xl mx-auto mb-10">
@@ -149,13 +149,13 @@ export default function Home() {
 
       <section
         id="festas"
-        className="min-h-screen flex flex-col justify-center items-center bg-white"
+        className="flex flex-col justify-center items-center bg-gray-100 m-5"
       >
-        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
+        <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
           Festas
         </h1>
         <ImageGallery />
-        <div className="max-w-4xl mx-auto mt-10 text-center">
+        <div className="max-w-4xl mx-auto my-5 text-center">
           <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
             Comprar festas
           </button>
@@ -165,9 +165,9 @@ export default function Home() {
       {/* Seção Fotos */}
       <section
         id="fotos"
-        className="min-h-screen flex flex-col justify-center items-center bg-white"
+        className="min-h-screen flex flex-col justify-center items-center bg-gray-100 m-5"
       >
-        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue">
+        <h1 className="text-xl sm:text-2xl font-bold mb-5 mt-5 flex items-center justify-center text-center text-customBlue">
           Galeria de Fotos
         </h1>
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 mt-6">
@@ -327,9 +327,9 @@ export default function Home() {
       {/* Seção Vendedores Oficiais */}
       <section
         id="vendedoresOficiais"
-        className="min-h-screen flex flex-col justify-center items-center bg-white mt-20 px-4"
+        className="flex flex-col justify-center items-center bg-gray-100 m-5"
       >
-        <h1 className="text-3xl sm:text-4xl font-bold text-customBlue mb-8 text-center">
+        <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
           Vendedores oficiais
         </h1>
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 w-full max-w-md sm:max-w-3xl mx-auto">
