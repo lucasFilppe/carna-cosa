@@ -1,12 +1,29 @@
 "use client";
-import { MdMenu } from "react-icons/md";
-import { useState } from "react";
-import CosaLogo from "../Logo";
-import { Transition } from "@headlessui/react";
-import { AiOutlineClose } from "react-icons/ai";
 
-export default function NavBar() {
+import CosaLogo from "../Logo";
+import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { MdMenu } from "react-icons/md";
+import { Transition } from "@headlessui/react";
+
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("#inicio"); // Link ativo inicial
+
+  const links = [
+    "#inicio",
+    "#blocos",
+    "#pacotes",
+    "#festas",
+    "#fotos",
+    "#vendedores",
+    "#informações",
+  ];
+
+  const handleLinkClick = (href: string) => {
+    setActiveLink(href); // Atualizar o link ativo
+    setIsOpen(false); // Fechar o menu móvel
+  };
 
   return (
     <div className="w-full">
@@ -29,43 +46,19 @@ export default function NavBar() {
           </div>
 
           {/* Links de navegação - Visível em telas médias e maiores */}
-          <div className="hidden md:flex flex-1 justify-center text-sm md:text-base">
+          <div className="hidden md:flex flex-1 justify-center text-2xl">
             <ul className="flex space-x-4">
-              <li>
-                <a href="#inicio" className="nav-link">
-                  Início
-                </a>
-              </li>
-              <li>
-                <a href="#blocos" className="nav-link">
-                  Blocos
-                </a>
-              </li>
-              <li>
-                <a href="#pacotes" className="nav-link">
-                  Pacotes
-                </a>
-              </li>
-              <li>
-                <a href="#festas" className="nav-link">
-                  Festas
-                </a>
-              </li>
-              <li>
-                <a href="#fotos" className="nav-link">
-                  Fotos
-                </a>
-              </li>
-              <li>
-                <a href="#vendedoresOficiais" className="nav-link">
-                  Vendedores oficiais
-                </a>
-              </li>
-              <li>
-                <a href="#informacoes" className="nav-link">
-                  Informações
-                </a>
-              </li>
+              {links.map((href: string) => (
+                <li key={href}>
+                  <a
+                    href={href}
+                    className={`nav-link ${activeLink === href ? "border-b-2 border-white" : ""}`}
+                    onClick={() => handleLinkClick(href)}
+                  >
+                    {href === "#inicio" ? "Início" : href.substring(1)}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -83,42 +76,18 @@ export default function NavBar() {
           >
             <div className="md:hidden fixed inset-0 top-16 z-40">
               <div className="bg-white rounded-t-lg shadow-lg w-full">
-                <ul className="bg-customBlue p-4 text-white">
-                  <li>
-                    <a href="#inicio" className="block py-2" onClick={() => setIsOpen(false)}>
-                      Início
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#blocos" className="block py-2" onClick={() => setIsOpen(false)}>
-                      Blocos
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#pacotes" className="block py-2" onClick={() => setIsOpen(false)}>
-                      Pacotes
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#festas" className="block py-2" onClick={() => setIsOpen(false)}>
-                      Festas
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#fotos" className="block py-2" onClick={() => setIsOpen(false)}>
-                      Fotos
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#vendedoresOficiais" className="block py-2" onClick={() => setIsOpen(false)}>
-                      Vendedores oficiais
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#informacoes" className="block py-2" onClick={() => setIsOpen(false)}>
-                      Informações
-                    </a>
-                  </li>
+                <ul className="bg-customBlue p-4 text-white text-xl">
+                  {links.map((href: string) => (
+                    <li key={href}>
+                      <a
+                        href={href}
+                        className={`block py-2 ${activeLink === href ? "border-b-2 border-white" : ""}`}
+                        onClick={() => handleLinkClick(href)}
+                      >
+                        {href === "#inicio" ? "Início" : href.substring(1)}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -129,3 +98,4 @@ export default function NavBar() {
   );
 }
 
+export default Navbar;
