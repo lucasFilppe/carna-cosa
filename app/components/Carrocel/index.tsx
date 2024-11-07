@@ -1,15 +1,15 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import Image from 'next/image'; // Importa o componente Image
+import { useEffect, useState } from "react";
+import Image from "next/image"; // Importa o componente Image
 
 const images = [
-  '/carrocel/image-1.jpg',
-  '/carrocel/image-2.jpg',
-  '/carrocel/image-3.jpg',
-  '/carrocel/image-4.jpg',
-  '/carrocel/image-5.jpg',
-  '/carrocel/image-6.jpg'
+  "/carrocel/image-1.jpg",
+  "/carrocel/image-2.jpg",
+  "/carrocel/image-3.jpg",
+  "/carrocel/image-4.jpg",
+  "/carrocel/image-5.jpg",
+  "/carrocel/image-6.jpg",
   // Adicione mais imagens conforme necessário
 ];
 
@@ -25,18 +25,21 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="flex items-center">
+    <div className="relative">
       <Image
         src={images[currentIndex]}
         alt={`Image ${currentIndex}`}
         width={720} // Largura da imagem
-        height={200} // Altura da imagem
+        height={400} // Altura da imagem
+        className="w-full h-auto"
       />
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+      <div className="absolute top-20 inset-x-0 flex justify-center">
         {images.map((_, index) => (
           <div
             key={index}
-            className={`h-2 w-2 mx-1 rounded-full transition duration-300 ease-in-out ${currentIndex === index ? 'bg-blue-500' : 'bg-gray-300'}`}
+            className={`h-2 w-2 mx-1 rounded-full transition duration-300 ease-in-out ${
+              currentIndex === index ? "bg-blue-500" : "bg-gray-300"
+            }`}
           />
         ))}
       </div>

@@ -17,7 +17,8 @@ const config: Config = {
         customBlue: '#3CBCD8',
         gold: '#daa520',
         red: '#ff0000',
-        orange:'#ff6400'
+        orange:'#ff6400',
+        black: "#030101"
       },
     },
   },
