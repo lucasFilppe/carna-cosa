@@ -64,7 +64,7 @@ export default function Home() {
 
           {/* Coluna do Texto */}
           <div className="w-full md:w-1/2">
-            <h1 className="text-4xl font-bold text-center md:text-left text-gray-900 mb-6">
+            <h1 className="text-4xl font-bold text-center md:text-left text-customBlue mb-6">
               Carnaval em Ouro Preto: Tradição e Alegria no Coração de Minas Gerais
             </h1>
 
@@ -81,7 +81,7 @@ export default function Home() {
             </section>
 
             <section className="text-lg leading-relaxed text-gray-700 mb-8">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-2xl font-semibold text-customBlue mb-4">
                 Tradição e Cultura com o Bloco Zé Pereira dos Lacaios
               </h2>
               <p className="mb-4">
@@ -90,7 +90,7 @@ export default function Home() {
             </section>
 
             <section className="text-lg leading-relaxed text-gray-700 mb-8">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-2xl font-semibold text-customBlue mb-4">
                 Dicas para Aproveitar ao Máximo
               </h2>
               <p className="mb-4">
