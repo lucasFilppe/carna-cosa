@@ -1,11 +1,11 @@
 import Image from "next/image";
-import NavBar from "./components/NavBar";
+import NavBar from "../components/NavBar";
 import { FaWhatsappSquare } from "react-icons/fa";
-import PacoteCard from "./components/PacoteCard";
-import { Pacote } from "./types/Pacote";
-import ImageGallery from "./components/Festas";
-import ButtonFloating from "./components/ButtonFloating";
-import Carousel from "./components/Carrocel";
+import PacoteCard from "../components/PacoteCard";
+import { Pacote } from "../types/Pacote";
+import ImageGallery from "../components/Festas";
+import ButtonFloating from "../components/ButtonFloating";
+import Carousel from "../components/Carrocel";
 import Head from "next/head";
 
 export default function Home() {
