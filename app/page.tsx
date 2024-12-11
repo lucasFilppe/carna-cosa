@@ -6,7 +6,6 @@ import { Pacote } from "./types/Pacote";
 import ImageGallery from "./components/Festas";
 import ButtonFloating from "./components/ButtonFloating";
 import Carousel from "./components/Carrocel";
-import Head from "next/head";
 
 export default function Home() {
   const pacotes: Pacote[] = [
@@ -43,22 +42,6 @@ export default function Home() {
   ];
   return (
     <>
-      <Head>
-        <title>Carnaval em Ouro Preto - Festas Universitárias e Tradição</title>
-        
-        <meta property="og:url" content="https://carnacosa.vercel.app/" />
-        
-        <meta
-          name="description"
-          content="Conheça o Carnaval de Ouro Preto, com festas universitárias, blocos tradicionais e uma rica experiência cultural em Minas Gerais."
-        />
-        <meta
-          name="keywords"
-          content="Carnaval Ouro Preto, festas universitárias, blocos tradicionais, Minas Gerais, cultura"
-        />
-        <link rel="canonical" href="https:/https://carnacosa.vercel.app//" />
-      </Head>
-
       <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)] overflow-hidden pt-20">
         {/* Ajuste a margem conforme necessário */}
         <NavBar />
