@@ -6,7 +6,7 @@ import { Pacote } from "./types/Pacote";
 import ImageGallery from "./components/Festas";
 import ButtonFloating from "./components/ButtonFloating";
 import Carousel from "./components/Carrocel";
-import Head from 'next/head';
+import Head from "next/head";
 
 export default function Home() {
   const pacotes: Pacote[] = [
@@ -55,7 +55,10 @@ export default function Home() {
         />
       </Head>
 
-      <section id="inicio" className="min-h-screen bg-gray-100 m-5 flex items-center">
+      <section
+        id="Início"
+        className="min-h-screen bg-gray-100 m-5 flex items-center"
+      >
         <div className="container mx-auto flex flex-col md:flex-row gap-8 px-4 py-8">
           {/* Coluna do Carrossel */}
           <div className="w-full md:w-1/2 flex justify-center">
@@ -65,18 +68,30 @@ export default function Home() {
           {/* Coluna do Texto */}
           <div className="w-full md:w-1/2">
             <h1 className="text-4xl font-bold text-center md:text-left text-customBlue mb-6">
-              Carnaval em Ouro Preto: Tradição e Alegria no Coração de Minas Gerais
+              Carnaval em Ouro Preto: Tradição e Alegria no Coração de Minas
+              Gerais
             </h1>
 
             <section className="text-lg leading-relaxed text-gray-700 mb-8">
               <p className="mb-4">
-                O Carnaval de Ouro Preto é um dos eventos mais aguardados e vibrantes do Brasil, atraindo milhares de foliões para a charmosa cidade histórica, que é Patrimônio Cultural da Humanidade.
+                O Carnaval de Ouro Preto é um dos eventos mais aguardados e
+                vibrantes do Brasil, atraindo milhares de foliões para a
+                charmosa cidade histórica, que é Patrimônio Cultural da
+                Humanidade.
               </p>
               <p className="mb-4">
-                Ouro Preto é conhecida por seu Carnaval universitário, impulsionado pelas repúblicas estudantis que organizam festas e eventos para os visitantes. Entre os blocos mais famosos estão o Bloco Cabrobró, o Bloco da Praia e o Bloco Chapado, que garantem a festa ao longo de toda a semana de Carnaval.
+                Ouro Preto é conhecida por seu Carnaval universitário,
+                impulsionado pelas repúblicas estudantis que organizam festas e
+                eventos para os visitantes. Entre os blocos mais famosos estão o
+                Bloco Cabrobró, o Bloco da Praia e o Bloco Chapado, que garantem
+                a festa ao longo de toda a semana de Carnaval.
               </p>
               <p className="mb-4">
-                O tradicional Bloco Zé Pereira dos Lacaios, fundado em 1867, é um dos mais antigos do Brasil e simboliza o espírito cultural de Ouro Preto. O bloco desfila com bonecos gigantes e lanternas, uma atração imperdível que mantém viva a herança cultural e folclórica da cidade.
+                O tradicional Bloco Zé Pereira dos Lacaios, fundado em 1867, é
+                um dos mais antigos do Brasil e simboliza o espírito cultural de
+                Ouro Preto. O bloco desfila com bonecos gigantes e lanternas,
+                uma atração imperdível que mantém viva a herança cultural e
+                folclórica da cidade.
               </p>
             </section>
 
@@ -85,7 +100,10 @@ export default function Home() {
                 Tradição e Cultura com o Bloco Zé Pereira dos Lacaios
               </h2>
               <p className="mb-4">
-                O Bloco Zé Pereira dos Lacaios é um dos principais símbolos do Carnaval de Ouro Preto, sendo um dos blocos mais antigos do Brasil e mantendo viva a cultura local com seus bonecos gigantes e tradicionais lanternas. 
+                O Bloco Zé Pereira dos Lacaios é um dos principais símbolos do
+                Carnaval de Ouro Preto, sendo um dos blocos mais antigos do
+                Brasil e mantendo viva a cultura local com seus bonecos gigantes
+                e tradicionais lanternas.
               </p>
             </section>
 
@@ -94,10 +112,15 @@ export default function Home() {
                 Dicas para Aproveitar ao Máximo
               </h2>
               <p className="mb-4">
-                Planeje sua viagem com antecedência, pois a cidade recebe milhares de visitantes durante o Carnaval. Reserve sua hospedagem cedo, use roupas confortáveis para as ladeiras e esteja preparado para uma experiência única de festa e cultura.
+                Planeje sua viagem com antecedência, pois a cidade recebe
+                milhares de visitantes durante o Carnaval. Reserve sua
+                hospedagem cedo, use roupas confortáveis para as ladeiras e
+                esteja preparado para uma experiência única de festa e cultura.
               </p>
               <p>
-                Explore a magia do Carnaval de Ouro Preto e viva uma experiência inesquecível, onde o antigo e o novo se encontram nas ladeiras históricas desta cidade mineira.
+                Explore a magia do Carnaval de Ouro Preto e viva uma experiência
+                inesquecível, onde o antigo e o novo se encontram nas ladeiras
+                históricas desta cidade mineira.
               </p>
             </section>
           </div>
@@ -107,12 +130,12 @@ export default function Home() {
 
       {/* Seção blocos */}
       <section
-        id="blocos"
+        id="Blocos"
         className="min-h-screen flex flex-col justify-center items-center bg-gray-100 m-5"
       >
         {[
           {
-            title: "Bloco caixão",
+            title: "Bloco Caixão",
             imgSrc: "/bloco-caixao.jpg",
             spotifyLinks: [
               "https://open.spotify.com/embed/artist/3CIIaeZuFYrAD6PRVyuO4U?utm_source=generator",
@@ -121,7 +144,7 @@ export default function Home() {
             ],
           },
           {
-            title: "Bloco cabróbro",
+            title: "Bloco Cabróbro",
             imgSrc: "/bloco-cabrobro.jpg",
             spotifyLinks: [
               "https://open.spotify.com/embed/artist/7gJN8W0589FisSYJS17K54?utm_source=generator&theme=0",
@@ -130,7 +153,7 @@ export default function Home() {
             ],
           },
           {
-            title: "Bloco praia",
+            title: "Bloco Praia",
             imgSrc: "/bloco-praia.jpg",
             spotifyLinks: [
               "https://open.spotify.com/embed/artist/0drNUQoEie9lmZKhCdIE6n?utm_source=generator",
@@ -141,7 +164,7 @@ export default function Home() {
             ],
           },
           {
-            title: "Bloco chapado",
+            title: "Bloco Chapado",
             imgSrc: "/bloco-chapado.jpg",
             spotifyLinks: [
               "https://open.spotify.com/embed/artist/5nP8x4uEFjAAmDzwOEc9b8?utm_source=generator",
@@ -180,7 +203,7 @@ export default function Home() {
 
       {/* Seção Pacotes */}
       <section
-        id="pacotes"
+        id="Pacotes"
         className="min-h-screen flex flex-col justify-center items-center bg-gray-100 m-5"
       >
         <div className="bg-gray-100 min-h-screen p-8">
@@ -213,7 +236,7 @@ export default function Home() {
       </section>
 
       <section
-        id="festas"
+        id="Festas"
         className="flex flex-col justify-center items-center bg-gray-100 m-5"
       >
         <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
@@ -229,7 +252,7 @@ export default function Home() {
 
       {/* Seção Fotos */}
       <section
-        id="fotos"
+        id="Fotos"
         className="min-h-screen flex flex-col justify-center items-center bg-gray-100 m-5"
       >
         <h1 className="text-xl sm:text-2xl font-bold mb-5 mt-5 flex items-center justify-center text-center text-customBlue">
@@ -391,7 +414,7 @@ export default function Home() {
 
       {/* Seção Vendedores Oficiais */}
       <section
-        id="vendedores"
+        id="Vendedores"
         className="flex flex-col justify-center items-center bg-gray-100 m-5"
       >
         <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
@@ -438,6 +461,13 @@ export default function Home() {
             </button>
           </div>
         </div>
+      </section>
+
+      <section id="Excursões">
+        <a
+          href="https://www.instagram.com/carnacosa/"
+          target="_blank"
+        ></a>
       </section>
 
       {/* Footer */}

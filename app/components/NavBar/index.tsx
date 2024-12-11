@@ -8,16 +8,17 @@ import { Transition } from "@headlessui/react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("#inicio"); // Link ativo inicial
+  const [activeLink, setActiveLink] = useState("#Inicio"); // Link ativo inicial
 
   const links = [
-    "#inicio",
-    "#blocos",
-    "#pacotes",
-    "#festas",
-    "#fotos",
-    "#vendedores",
-    "#informações",
+    "#Início",
+    "#Blocos",
+    "#Pacotes",
+    "#Festas",
+    "#Fotos",
+    "#Vendedores",
+    "#Excursões",
+    "#Informações",
   ];
 
   const handleLinkClick = (href: string) => {
@@ -51,11 +52,19 @@ function Navbar() {
               {links.map((href: string) => (
                 <li key={href}>
                   <a
-                    href={href}
-                    className={`nav-link ${activeLink === href ? "border-b-2 border-white" : ""}`}
+                    href={
+                      href === "#Excursões" ? "https://wa.me/5537998418715" : href
+                    } // URL personalizada para WhatsApp
+                    className={`nav-link ${
+                      activeLink === href ? "border-b-2 border-white" : ""
+                    }`}
                     onClick={() => handleLinkClick(href)}
+                    target={href === "#Excursões" ? "_blank" : undefined} // Abre em nova aba se for WhatsApp
+                    rel={
+                      href === "#Excursões" ? "noopener noreferrer" : undefined
+                    } // Segurança ao abrir nova aba
                   >
-                    {href === "#inicio" ? "Início" : href.substring(1)}
+                    {href === "#Início" ? "Início" : href.substring(1)}
                   </a>
                 </li>
               ))}
@@ -79,13 +88,21 @@ function Navbar() {
                 <ul className="bg-customBlue p-4 text-white text-xl">
                   {links.map((href: string) => (
                     <li key={href}>
-                      <a
-                        href={href}
-                        className={`block py-2 ${activeLink === href ? "border-b-2 border-white" : ""}`}
-                        onClick={() => handleLinkClick(href)}
-                      >
-                        {href === "#inicio" ? "Início" : href.substring(1)}
-                      </a>
+                    <a
+                    href={
+                      href === "#Excursões" ? "https://wa.me/5537998418715" : href
+                    }
+                    className={`nav-link ${
+                      activeLink === href ? "border-b-2 border-white" : ""
+                    }`}
+                    onClick={() => handleLinkClick(href)}
+                    target={href === "#Excursões" ? "_blank" : undefined} // Abre em nova aba se for WhatsApp
+                    rel={
+                      href === "#Excursões" ? "noopener noreferrer" : undefined
+                    } // Segurança ao abrir nova aba
+                  >
+                    {href === "#Início" ? "Início" : href.substring(1)}
+                  </a>
                     </li>
                   ))}
                 </ul>
