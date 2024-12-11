@@ -6,7 +6,6 @@ import { Pacote } from "./types/Pacote";
 import ImageGallery from "./components/Festas";
 import ButtonFloating from "./components/ButtonFloating";
 import Carousel from "./components/Carrocel";
-import Head from "next/head";
 
 export default function Home() {
   const pacotes: Pacote[] = [
@@ -47,13 +46,6 @@ export default function Home() {
       <NavBar />
 
       {/* Seção Início */}
-      <Head>
-        <title>Carnaval em Ouro Preto | Carnacosa</title>
-        <meta
-          name="description"
-          content="Conheça o Carnaval de Ouro Preto, com festas universitárias, blocos tradicionais e uma rica experiência cultural em Minas Gerais."
-        />
-      </Head>
 
       <section
         id="Início"
