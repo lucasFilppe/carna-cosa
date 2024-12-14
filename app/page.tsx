@@ -273,7 +273,7 @@ export default function Home() {
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
+                src="/foto-1.jpg"
                 alt="Post 1"
                 width={400} // Define a largura da imagem
                 height={300} // Define a altura da imagem
