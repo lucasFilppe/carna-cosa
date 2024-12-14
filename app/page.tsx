@@ -6,6 +6,7 @@ import { Pacote } from "./types/Pacote";
 import ImageGallery from "./components/Festas";
 import ButtonFloating from "./components/ButtonFloating";
 import Carousel from "./components/Carrocel";
+//import Link from "next/link";
 
 export default function Home() {
   const pacotes: Pacote[] = [
@@ -223,7 +224,13 @@ export default function Home() {
             {/* Botão de Comprar Pacote */}
             <div className="max-w-4xl mx-auto mt-10 text-center">
               <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
-                Comprar pacote
+                <a
+                  href="https://wa.me/55389997-4415"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Comprar pacote
+                </a>
               </button>
             </div>
           </div>
@@ -239,7 +246,13 @@ export default function Home() {
           <ImageGallery />
           <div className="max-w-4xl mx-auto my-5 text-center">
             <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
-              Comprar festas
+              <a
+                href="https://wa.me/55389997-4415"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Comprar festas
+              </a>
             </button>
           </div>
         </section>
@@ -262,144 +275,145 @@ export default function Home() {
               <Image
                 src="/foto1-cosa.jpg"
                 alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+                
               />
             </a>
 
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto-2.png"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
-                alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                src="/foto-2.png"
+                alt="Post 2"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
               />
             </a>
 
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto-3.jpg"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
-                alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                src="/foto-3.jpg"
+                alt="Post 3"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
               />
             </a>
 
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto-4.jpg"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
-                alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                src="/foto-4.jpg"
+                alt="Post 4"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
               />
             </a>
 
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto-5.jpg"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
-                alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                src="/foto-5.jpg"
+                alt="Post 5"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
               />
             </a>
 
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto-6.jpg"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
-                alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                src="/foto-6.jpg"
+                alt="Post 6"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
               />
             </a>
 
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto-7.jpg"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
-                alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                src="/foto-7.jpg"
+                alt="Post 7"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
               />
             </a>
 
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto-8.jpg"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
-                alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                src="/foto-8.jpg"
+                alt="Post 8"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
               />
             </a>
 
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto-9.jpg"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
-                alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                src="/foto-9.jpg"
+                alt="Post 9"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
               />
             </a>
 
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto-10.jpg"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto1-cosa.jpg"
-                alt="Post 1"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300"
+                src="/foto-10.jpg"
+                alt="Post 10"
+                width={400} // Define a largura da imagem
+                height={300} // Define a altura da imagem
+                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
               />
             </a>
             {/* Repita para cada imagem */}
@@ -431,7 +445,13 @@ export default function Home() {
                 João Paulo
               </h2>
               <button className="flex items-center text-white font-bold rounded p-2 transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
-                <FaWhatsappSquare className="w-12 h-12 text-green-400 transition-colors duration-300 hover:text-green-600" />
+                <a
+                  href="https://wa.me/55389997-4415"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsappSquare className="w-12 h-12 text-green-400 transition-colors duration-300 hover:text-green-600" />
+                </a>
               </button>
             </div>
 
@@ -451,7 +471,14 @@ export default function Home() {
                 Pedro da Mata
               </h2>
               <button className="flex items-center text-white font-bold rounded p-2 transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
-                <FaWhatsappSquare className="w-12 h-12 text-green-400 transition-colors duration-300 hover:text-green-600" />
+                <a
+                  href="https://wa.me/553193326993"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-white font-bold rounded p-2 transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white"
+                >
+                  <FaWhatsappSquare className="w-12 h-12 text-green-400 transition-colors duration-300 hover:text-green-600" />
+                </a>
               </button>
             </div>
           </div>

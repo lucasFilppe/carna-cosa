@@ -5,6 +5,7 @@ import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { MdMenu } from "react-icons/md";
 import { Transition } from "@headlessui/react";
+import Link from "next/link";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +52,7 @@ function Navbar() {
             <ul className="flex space-x-4">
               {links.map((href: string) => (
                 <li key={href}>
-                  <a
+                  <Link
                     href={
                       href === "#Excursões" ? "https://wa.me/5537998418715" : href
                     } // URL personalizada para WhatsApp
@@ -65,7 +66,7 @@ function Navbar() {
                     } // Segurança ao abrir nova aba
                   >
                     {href === "#Início" ? "Início" : href.substring(1)}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -88,7 +89,7 @@ function Navbar() {
                 <ul className="bg-customBlue p-4 text-white text-xl">
                   {links.map((href: string) => (
                     <li key={href}>
-                    <a
+                    <Link
                     href={
                       href === "#Excursões" ? "https://wa.me/5537998418715" : href
                     }
@@ -102,7 +103,7 @@ function Navbar() {
                     } // Segurança ao abrir nova aba
                   >
                     {href === "#Início" ? "Início" : href.substring(1)}
-                  </a>
+                  </Link>
                     </li>
                   ))}
                 </ul>
