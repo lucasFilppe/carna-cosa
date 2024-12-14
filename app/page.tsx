@@ -267,13 +267,13 @@ export default function Home() {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-5 gap-2 mt-6">
             <a
-              href="/foto1-cosa.jpg"
+              href="/foto1-cosa.png"
               target="_blank"
               rel="noopener noreferrer"
               className="relative w-64 h-64 sm:w-64 sm:h-64"
             >
               <Image
-                src="/foto-1.jpg"
+                src="/foto-1.png"
                 alt="Post 1"
                 width={400} // Define a largura da imagem
                 height={300} // Define a altura da imagem
