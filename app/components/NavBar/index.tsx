@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import CosaLogo from "../Logo";
 import { useState } from "react";
@@ -6,66 +6,73 @@ import { AiOutlineClose } from "react-icons/ai";
 import { MdMenu } from "react-icons/md";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // Substituindo useRouter
 
-function Navbar() {
+const Navbar = () => {
+  const pathname = usePathname(); // Usando usePathname para pegar o caminho atual
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("#Inicio"); // Link ativo inicial
 
+  // Alterna o estado do menu móvel
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  // Links da barra de navegação
   const links = [
-    "#Início",
-    "#Blocos",
-    "#Pacotes",
-    "#Festas",
-    "#Fotos",
-    "#Vendedores",
-    "#Excursões",
-    "#Informações",
+    { href: "/", label: "Início" },
+    { href: "/blocos", label: "Blocos" },
+    { href: "/pacotes", label: "Pacotes" },
+    { href: "/festas", label: "Festas" },
+    { href: "/fotos", label: "Fotos" },
+    { href: "/vendedores", label: "Vendedores" },
+    { href: "https://wa.me/5537998418715", label: "Excursões" },
+    { href: "/informacoes", label: "Informações" },
   ];
 
-  const handleLinkClick = (href: string) => {
-    setActiveLink(href); // Atualizar o link ativo
-    setIsOpen(false); // Fechar o menu móvel
+  // Classe para o link ativo
+  const getLinkClass = (href: string) => {
+    const isActive = pathname === href;
+    return `nav-link ${isActive ? "border-b-2 border-white" : ""}`;
   };
+
+  // Propriedades de segurança e destino para links externos
+  const getLinkProps = (href: string) => ({
+    ...(href.startsWith("http") && {
+      target: "_blank",
+      rel: "noopener noreferrer",
+    }),
+  });
 
   return (
     <div className="w-full">
       <nav className="bg-customBlue text-white p-2 w-full fixed top-0 z-50 h-20">
         <div className="flex items-center justify-between max-w-7xl mx-auto px-4">
-          {/* Logo na esquerda */}
+          {/* Logo */}
           <div className="flex items-center space-x-4">
             <CosaLogo />
           </div>
 
-          {/* Botão de menu hambúrguer para dispositivos móveis */}
+          {/* Botão de menu para dispositivos móveis */}
           <div className="md:hidden flex items-end justify-end">
             <button
-              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Alternar menu"
+              aria-expanded={isOpen}
+              onClick={toggleMenu}
               className="focus:outline-none"
             >
-              {/* Alternar entre os ícones */}
               {isOpen ? <AiOutlineClose size={50} /> : <MdMenu size={50} />}
             </button>
           </div>
 
-          {/* Links de navegação - Visível em telas médias e maiores */}
+          {/* Links de navegação - Para telas médias e maiores */}
           <div className="hidden md:flex flex-1 justify-center text-2xl">
             <ul className="flex space-x-4">
-              {links.map((href: string) => (
+              {links.map(({ href, label }) => (
                 <li key={href}>
                   <Link
-                    href={
-                      href === "#Excursões" ? "https://wa.me/5537998418715" : href
-                    } // URL personalizada para WhatsApp
-                    className={`nav-link ${
-                      activeLink === href ? "border-b-2 border-white" : ""
-                    }`}
-                    onClick={() => handleLinkClick(href)}
-                    target={href === "#Excursões" ? "_blank" : undefined} // Abre em nova aba se for WhatsApp
-                    rel={
-                      href === "#Excursões" ? "noopener noreferrer" : undefined
-                    } // Segurança ao abrir nova aba
+                    href={href}
+                    className={getLinkClass(href)}
+                    {...getLinkProps(href)}
                   >
-                    {href === "#Início" ? "Início" : href.substring(1)}
+                    {label}
                   </Link>
                 </li>
               ))}
@@ -73,7 +80,7 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Menu Dropdown para dispositivos móveis */}
+        {/* Menu dropdown - Para dispositivos móveis */}
         {isOpen && (
           <Transition
             show={isOpen}
@@ -87,23 +94,15 @@ function Navbar() {
             <div className="md:hidden fixed inset-0 top-16 z-40">
               <div className="bg-white rounded-t-lg shadow-lg w-full">
                 <ul className="bg-customBlue p-4 text-white text-xl">
-                  {links.map((href: string) => (
+                  {links.map(({ href, label }) => (
                     <li key={href}>
-                    <Link
-                    href={
-                      href === "#Excursões" ? "https://wa.me/5537998418715" : href
-                    }
-                    className={`nav-link ${
-                      activeLink === href ? "border-b-2 border-white" : ""
-                    }`}
-                    onClick={() => handleLinkClick(href)}
-                    target={href === "#Excursões" ? "_blank" : undefined} // Abre em nova aba se for WhatsApp
-                    rel={
-                      href === "#Excursões" ? "noopener noreferrer" : undefined
-                    } // Segurança ao abrir nova aba
-                  >
-                    {href === "#Início" ? "Início" : href.substring(1)}
-                  </Link>
+                      <Link
+                        href={href}
+                        className={getLinkClass(href)}
+                        {...getLinkProps(href)}
+                      >
+                        {label}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -114,6 +113,8 @@ function Navbar() {
       </nav>
     </div>
   );
-}
+};
 
 export default Navbar;
+
+
