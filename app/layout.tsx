@@ -46,7 +46,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         <Navbar />
-        <div className="py-10">{children}</div>
+        <div className="flex-grow py-10">{children}</div>
         <Analytics />
         {/* Footer */}
         <div className="bg-black">
