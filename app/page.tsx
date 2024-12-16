@@ -6,7 +6,7 @@ import Pacotes from "./pacotes/page";
 import Festas from "./festas/page";
 import Fotos from "./fotos/page";
 import Vendedores from "./vendedores/page";
-import Informacoes from "./informacoes/page";
+
 //import Link from "next/link";
 
 export default function Home() {
@@ -96,7 +96,7 @@ export default function Home() {
         <Festas />
         <Fotos />
         <Vendedores />
-        <Informacoes />
+    
       </div>
     </>
   );

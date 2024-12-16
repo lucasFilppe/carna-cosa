@@ -4,6 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/NavBar";
 import ButtonFloating from "./components/ButtonFloating";
+import Informacoes from "./informacoes/page";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -50,7 +51,7 @@ export default function RootLayout({
         <ButtonFloating />
         <main className="flex-grow py-10">{children}</main>
         <Analytics />
-        
+        <Informacoes />
       </body>
     </html>
   );
