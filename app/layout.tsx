@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/NavBar";
-import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,12 +42,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="eQmpe7XzsiOXHswLKm9OYwKFqpDAWe9hZNEX4qB9Wk8"
-        />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
