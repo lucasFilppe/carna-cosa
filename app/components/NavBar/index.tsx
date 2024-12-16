@@ -100,6 +100,7 @@ const Navbar = () => {
                         href={href}
                         className={getLinkClass(href)}
                         {...getLinkProps(href)}
+                        onClick={() => setIsOpen(false)} // Fecha o menu ao clicar no link
                       >
                         {label}
                       </Link>
