@@ -1,7 +1,6 @@
 "use client";
 
 import Head from "next/head";
-
 import { useState } from "react";
 
 interface FAQItem {
@@ -47,38 +46,41 @@ const Informacoes = () => {
           content="Saiba todas as informações importantes para curtir o carnaval com segurança e diversão."
         />
       </Head>
-      <main>
-        <section id="faq" className="py-12 px-4 bg-gray-100">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8 text-customBlue">
-              Perguntas Frequentes
-            </h2>
-            <div className="space-y-4">
-              {faqData.map((item, index) => (
-                <div key={index} className="border-b border-gray-300 pb-4">
-                  <button
-                    onClick={() => toggleFAQ(index)}
-                    className="w-full text-customBlue flex justify-between items-center text-lg font-semibold text-left focus:outline-none"
-                  >
-                    {item.question}
-                    <span
-                      className={`ml-2 transition-transform ${
-                        activeIndex === index ? "rotate-180" : ""
-                      }`}
+      <div className="flex flex-col min-h-screen">
+        <main className="flex-grow py-12 px-4 bg-gray-100">
+          <section id="faq" className="py-12 px-4 bg-gray-100">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-customBlue">
+                Perguntas Frequentes
+              </h2>
+              <div className="space-y-4">
+                {faqData.map((item, index) => (
+                  <div key={index} className="border-b border-gray-300 pb-4">
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full text-customBlue flex justify-between items-center text-lg font-semibold text-left focus:outline-none"
                     >
-                      ▼
-                    </span>
-                  </button>
-                  {activeIndex === index && (
-                    <p className="mt-2 text-gray-700">{item.answer}</p>
-                  )}
-                </div>
-              ))}
+                      {item.question}
+                      <span
+                        className={`ml-2 transition-transform ${
+                          activeIndex === index ? "rotate-180" : ""
+                        }`}
+                      >
+                        ▼
+                      </span>
+                    </button>
+                    {activeIndex === index && (
+                      <p className="mt-2 text-gray-700">{item.answer}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-                {/* Footer */}
-                <div className="bg-black">
+          </section>
+        </main>
+
+        {/* Footer */}
+        <div className="bg-black">
           <footer className="w-full flex flex-col items-center text-center text-surface text-white">
             <div className="container px-6 pt-6">
               <div className="mb-6 flex justify-center space-x-2">
@@ -169,9 +171,10 @@ const Informacoes = () => {
             </div>
           </footer>
         </div>
-      </main>
+      </div>
     </>
   );
 };
 
 export default Informacoes;
+
