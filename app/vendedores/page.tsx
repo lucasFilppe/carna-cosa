@@ -14,7 +14,7 @@ const Vendedores = () => {
         {/* Seção Vendedores Oficiais */}
         <section
           id="Vendedores"
-          className="flex flex-col justify-center items-center bg-gray-100 m-5"
+          className="flex flex-col justify-center items-center bg-white m-5"
         >
           <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
             Vendedores oficiais
