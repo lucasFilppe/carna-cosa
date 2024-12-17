@@ -10,8 +10,7 @@ export default function ButtonFloating() {
     >
        <Image 
         src="/instagram.svg" 
-        alt="Ícone do Instagram" 
-        className="h-12 w-12" 
+        alt="Ícone do Instagram"  
         width={48} // Ajuste a largura conforme necessário
         height={48} // Ajuste a altura conforme necessário
       />
