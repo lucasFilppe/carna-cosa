@@ -29,8 +29,8 @@ const Carousel = () => {
       <Image
         src={images[currentIndex]}
         alt={`Imagem ${currentIndex}`}
-        width={300} // Largura da imagem
-        height={400} // Altura da imagem
+        width={200} // Largura da imagem
+        height={300} // Altura da imagem
         className="w-full h-auto"
       />
       <div className="absolute top-20 inset-x-0 flex justify-center">
