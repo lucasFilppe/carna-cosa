@@ -172,16 +172,16 @@ const Fotos = () => {
             </a>
             {/* Repita para cada imagem */}
           </div>
-          
+
           {/* Botão de Comprar Pacote */}
           <div className="max-w-4xl mx-auto mt-10 text-center">
             <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
               <a
-                href="https://wa.me/5531999119767"
+                href="https://drive.google.com/drive/u/0/folders/1f41dBduCMMpiIMg9YjY7Jak68Zmpu3TM"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Comprar pacote
+                Veja mais...
               </a>
             </button>
           </div>
