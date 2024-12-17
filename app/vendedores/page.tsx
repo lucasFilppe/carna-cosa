@@ -37,7 +37,7 @@ const Vendedores = () => {
               </h2>
               <button className="flex items-center text-white font-bold rounded p-2 transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
                 <a
-                  href="https://wa.me/55389997-4415"
+                  href="https://wa.me/5531972041833"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -63,7 +63,7 @@ const Vendedores = () => {
               </h2>
               <button className="flex items-center text-white font-bold rounded p-2 transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
                 <a
-                  href="https://wa.me/553193326993"
+                  href="https://wa.me/5531999119767"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-white font-bold rounded p-2 transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white"

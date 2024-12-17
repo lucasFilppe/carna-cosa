@@ -31,60 +31,32 @@ export default function Home() {
             {/* Coluna do Texto */}
             <div className="w-full md:w-1/2">
               <h1 className="text-4xl font-bold text-center md:text-left text-customBlue mb-6">
-                Carnaval em Ouro Preto: Tradição e Alegria no Coração de Minas
-                Gerais
+                Venha viver a magia do Carnaval de Ouro Preto!
               </h1>
 
               <section className="text-lg leading-relaxed text-gray-700 mb-8">
                 <p className="mb-4">
-                  O Carnaval de Ouro Preto é um dos eventos mais aguardados e
-                  vibrantes do Brasil, atraindo milhares de foliões para a
-                  charmosa cidade histórica, que é Patrimônio Cultural da
-                  Humanidade.
+                  Prepare-se para mergulhar em um dos carnavais mais incríveis e
+                  tradicionais do Brasil! Em meio às ladeiras históricas,
+                  casarios coloniais e o som contagiante das baterias, Ouro
+                  Preto se transforma em um palco vibrante de cultura, folia e
+                  alegria
                 </p>
                 <p className="mb-4">
-                  Ouro Preto é conhecida por seu Carnaval universitário,
-                  impulsionado pelas repúblicas estudantis que organizam festas
-                  e eventos para os visitantes. Entre os blocos mais famosos
-                  estão o Bloco Cabrobró, o Bloco da Praia e o Bloco Chapado,
-                  que garantem a festa ao longo de toda a semana de Carnaval.
+                  Aqui, o passado e o presente se encontram em uma explosão de
+                  cores, fantasias e música. Dos blocos caricatos aos grandes
+                  desfiles, cada canto da cidade pulsa com energia, diversidade
+                  e a hospitalidade única de quem sabe fazer festa como ninguém.
                 </p>
                 <p className="mb-4">
-                  O tradicional Bloco Zé Pereira dos Lacaios, fundado em 1867, é
-                  um dos mais antigos do Brasil e simboliza o espírito cultural
-                  de Ouro Preto. O bloco desfila com bonecos gigantes e
-                  lanternas, uma atração imperdível que mantém viva a herança
-                  cultural e folclórica da cidade.
+                  Não importa se você busca a emoção dos blocos de rua, os shows
+                  ao vivo ou a vibe descontraída das repúblicas: Ouro Preto tem
+                  o carnaval perfeito para você.
                 </p>
-              </section>
-
-              <section className="text-lg leading-relaxed text-gray-700 mb-8">
-                <h2 className="text-2xl font-semibold text-customBlue mb-4">
-                  Tradição e Cultura com o Bloco Zé Pereira dos Lacaios
-                </h2>
                 <p className="mb-4">
-                  O Bloco Zé Pereira dos Lacaios é um dos principais símbolos do
-                  Carnaval de Ouro Preto, sendo um dos blocos mais antigos do
-                  Brasil e mantendo viva a cultura local com seus bonecos
-                  gigantes e tradicionais lanternas.
-                </p>
-              </section>
-
-              <section className="text-lg leading-relaxed text-gray-700 mb-8">
-                <h2 className="text-2xl font-semibold text-customBlue mb-4">
-                  Dicas para Aproveitar ao Máximo
-                </h2>
-                <p className="mb-4">
-                  Planeje sua viagem com antecedência, pois a cidade recebe
-                  milhares de visitantes durante o Carnaval. Reserve sua
-                  hospedagem cedo, use roupas confortáveis para as ladeiras e
-                  esteja preparado para uma experiência única de festa e
-                  cultura.
-                </p>
-                <p>
-                  Explore a magia do Carnaval de Ouro Preto e viva uma
-                  experiência inesquecível, onde o antigo e o novo se encontram
-                  nas ladeiras históricas desta cidade mineira.
+                  Reúna os amigos, escolha sua fantasia e venha escrever
+                  momentos inesquecíveis no destino mais charmoso e animado do
+                  Brasil. Ouro Preto espera por você! 🎭🎶💃
                 </p>
               </section>
             </div>
@@ -96,7 +68,6 @@ export default function Home() {
         <Festas />
         <Fotos />
         <Vendedores />
-    
       </div>
     </>
   );
