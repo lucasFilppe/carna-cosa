@@ -80,6 +80,7 @@ const Informacoes = () => {
                 {/* Ícone do Facebook */}
                 <a
                   href="https://www.facebook.com/repcosanostraOP"
+                  target="_blank"
                   className="rounded-full bg-[#3b5998] p-3 text-white shadow-black/30 transition duration-150 ease-in-out hover:shadow-md focus:outline-none"
                 >
                   <svg
