@@ -22,6 +22,7 @@ const Blocos = () => {
                 "https://open.spotify.com/embed/artist/3CIIaeZuFYrAD6PRVyuO4U?utm_source=generator",
                 "https://open.spotify.com/embed/artist/6YzSM19LzpLH0nVKKU6Jsy?utm_source=generator",
                 "https://open.spotify.com/embed/artist/2uGKgNuq7MnKksXiSO6HjB?utm_source=generator",
+                "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0fyXlA?utm_source=generator",
               ],
             },
             {
@@ -31,6 +32,9 @@ const Blocos = () => {
                 "https://open.spotify.com/embed/artist/7gJN8W0589FisSYJS17K54?utm_source=generator&theme=0",
                 "https://open.spotify.com/embed/artist/0pcoadNMmvrUyab1RxWBoV?utm_source=generator",
                 "https://open.spotify.com/embed/artist/1AuDtbIuaPj9LHnOUMT3C8?utm_source=generator",
+                "https://open.spotify.com/embed/artist/0NB5wv4kn6A919CLHUKRmk?utm_source=generator",
+                "https://open.spotify.com/embed/artist/22RXQj1gd5zEbcRjdxiJbu?utm_source=generator",
+                
               ],
             },
             {
@@ -50,6 +54,10 @@ const Blocos = () => {
               spotifyLinks: [
                 "https://open.spotify.com/embed/artist/5nP8x4uEFjAAmDzwOEc9b8?utm_source=generator",
                 "https://open.spotify.com/embed/artist/34dfPo3Zi55yM6oV46q4y7?utm_source=generator",
+                "https://open.spotify.com/embed/artist/6aoGgTKGqtsjj48ymcNs4Z?utm_source=generator",
+                "https://open.spotify.com/embed/artist/063wYkWkHrq5L5YWdrqjEt?utm_source=generator",
+                "https://open.spotify.com/embed/artist/3SBOxPJ9Ilvge7XrOJb01C?utm_source=generator" ,
+
               ],
             },
             // Add other blocks similarly here
