@@ -23,10 +23,10 @@ const Navbar = () => {
     { href: "/festas", label: "Festas" },
     { href: "/fotos", label: "Fotos" },
     { href: "/vendedores", label: "Vendedores" },
-    { href: "https://wa.me/5537998418715", label: "Excursões" },
+    { href: "/excursao", label: "Excursões" },
     { href: "/informacoes", label: "Informações" },
   ];
-
+ 
   // Classe para o link ativo
   const getLinkClass = (href: string) => {
     const isActive = pathname === href;

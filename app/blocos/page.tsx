@@ -12,7 +12,6 @@ const Blocos = () => {
          {/* Seção blocos */}
          <section
           id="Blocos"
-          className="min-h-screen flex flex-col justify-center items-center bg-gray-100 m-5"
         >
           {[
             {
@@ -62,29 +61,29 @@ const Blocos = () => {
             },
             // Add other blocks similarly here
           ].map((bloco, index) => (
-            <div key={index} className="my-6  rounded-lg w-full max-w-xl p-4">
-              <p className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
+            <div key={index} className="my-6  rounded-lg w-full  p-4">
+              <p className="text-4xl  font-bold mb-4 flex items-center justify-center text-center text-customBlue">
                 {bloco.title}
                 <span className="ml-2">
                   <Image
                     src={bloco.imgSrc}
                     alt={`logo ${bloco.title}`}
-                    width={30}
-                    height={30}
+                    width={60}
+                    height={60}
                     className="rounded-full"
                   />
                 </span>
               </p>
               {bloco.spotifyLinks.map((link, i) => (
                 <iframe
-                  key={i}
-                  className="rounded-lg h-[352px] sm:h-[152px] w-full mt-4"
-                  src={link}
-                  frameBorder="0"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                  style={{ width: "100%" }} // Adiciona estilo inline para garantir 100% de largura
-                ></iframe>
+                key={i}
+                className="rounded-lg w-full h-[352px] sm:h-[152px] lg:h-[152px] lg:w-full mt-4"
+                src={link}
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+
               ))}
             </div>
           ))}

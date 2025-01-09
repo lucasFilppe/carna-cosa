@@ -47,12 +47,12 @@ const Pacotes = () => {
           id="Pacotes"
 
         >
-          <div className="min-h-screen ">
+          <div className="min-h-screen p-5">
             <h1 className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
               Todos os Pacotes Incluem:
             </h1>
             <div className="max-w-4xl mx-auto mb-10">
-              <ul className="list-disc list-inside text-lg text-gray-700">
+              <ul className="list-disc list-inside text-lg text-white">
                 <li>🏠 5 dias de Hospedagem com almoço</li>
                 <li>🍻 24h de Open Bar durante todos os dias</li>
                 <li>🎭 6 Festas exclusivas</li>
