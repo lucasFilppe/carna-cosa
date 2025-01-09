@@ -29,7 +29,7 @@ export default function Home() {
             </div>
 
             {/* Coluna do Texto */}
-            <div className="w-full md:w-1/2 m-5">
+            <div className="w-full md:w-1/2 p-5">
               <h1 className="text-4xl font-bold text-center md:text-left text-customBlue pt-20">
                 Venha viver a magia do Carnaval de Ouro Preto!
               </h1>
