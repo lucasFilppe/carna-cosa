@@ -30,11 +30,10 @@ export default function Home() {
 
             {/* Coluna do Texto */}
             <div className="w-full md:w-1/2">
-              <h1 className="text-4xl font-bold text-center md:text-left text-customBlue mb-6">
+              <h1 className="text-4xl font-bold text-center md:text-left text-customBlue pt-20">
                 Venha viver a magia do Carnaval de Ouro Preto!
               </h1>
 
-              <section className="text-lg leading-relaxed text-gray-700 mb-8">
                 <p className="mb-4">
                   Prepare-se para mergulhar em um dos carnavais mais incríveis e
                   tradicionais do Brasil! Em meio às ladeiras históricas,
@@ -58,7 +57,6 @@ export default function Home() {
                   momentos inesquecíveis no destino mais charmoso e animado do
                   Brasil. Ouro Preto espera por você! 🎭🎶💃
                 </p>
-              </section>
             </div>
           </div>
         </section>
