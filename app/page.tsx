@@ -12,7 +12,7 @@ import Vendedores from "./vendedores/page";
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)] pt-20">       
+      <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)] pt-[10px] ">       
         {/* Ajuste a margem conforme necessário */}
         {/*<NavBar />*/}
 
@@ -20,9 +20,9 @@ export default function Home() {
 
         <section
           id="Início"
-          className="min-h-screen bg-gray-100 m-5 flex items-center"
+          className="min-h-screen bg-gray-100  flex items-center"
         >
-          <div className="container mx-auto flex flex-col md:flex-row gap-8 px-4 py-8">
+          <div className="container mx-auto flex flex-col md:flex-row">
             {/* Coluna do Carrossel */}
             <div className="w-full md:w-1/2 flex justify-center">
               <Carousel />
