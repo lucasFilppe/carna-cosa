@@ -24,7 +24,7 @@ const Carousel = () => {
   }, [isImageLoaded]); // Remove images.length das dependências
 
   useEffect(() => {
-    const interval = setInterval(changeImage, 3000);
+    const interval = setInterval(changeImage, 2000);
     return () => clearInterval(interval);
   }, [changeImage]);
 

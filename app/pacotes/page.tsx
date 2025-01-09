@@ -45,9 +45,9 @@ const Pacotes = () => {
         {/* Seção Pacotes */}
             <section
           id="Pacotes"
-          className="min-h-screen flex flex-col justify-center items-center bg-gray-100 m-5"
+
         >
-          <div className="bg-gray-100 min-h-screen p-8">
+          <div className="min-h-screen ">
             <h1 className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
               Todos os Pacotes Incluem:
             </h1>
