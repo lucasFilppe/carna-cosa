@@ -20,7 +20,7 @@ export default function Home() {
 
         <section
           id="Início"
-          className="min-h-screen bg-gray-100  flex items-center"
+          className="min-h-screen bg-gray-100  flex items-center "
         >
           <div className="container mx-auto flex flex-col md:flex-row">
             {/* Coluna do Carrossel */}
@@ -29,7 +29,7 @@ export default function Home() {
             </div>
 
             {/* Coluna do Texto */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 m-5">
               <h1 className="text-4xl font-bold text-center md:text-left text-customBlue pt-20">
                 Venha viver a magia do Carnaval de Ouro Preto!
               </h1>
