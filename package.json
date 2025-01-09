@@ -21,6 +21,7 @@
     "react-modal": "^3.16.1"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
     "@types/leaflet": "^1.9.14",
     "@types/node": "^20.17.5",
     "@types/react": "^18.3.12",

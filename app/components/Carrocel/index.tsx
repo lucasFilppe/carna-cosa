@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Image from "next/image"; // Importa o componente Image
+import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 
 const images = [
   "/carrocel/image-1.jpg",
@@ -9,35 +9,47 @@ const images = [
   "/carrocel/image-3.jpg",
   "/carrocel/image-4.jpg",
   "/carrocel/image-5.jpg",
-  "/carrocel/image-6.jpg",
-  // Adicione mais imagens conforme necessário
 ];
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isImageLoaded, setIsImageLoaded] = useState(true);
+
+  // Memoriza a função para evitar recriação
+  const changeImage = useCallback(() => {
+    if (isImageLoaded) {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setIsImageLoaded(false);
+    }
+  }, [isImageLoaded]); // Remove images.length das dependências
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000); // Muda a imagem a cada 3 segundos
+    const interval = setInterval(changeImage, 3000);
+    return () => clearInterval(interval);
+  }, [changeImage]);
 
-    return () => clearInterval(intervalId); // Limpa o intervalo ao desmontar o componente
-  }, []);
+  const handleImageLoad = () => setIsImageLoaded(true);
 
   return (
-    <div className="relative">
+    <div className="relative w-full max-w-[720px] mx-auto">
       <Image
         src={images[currentIndex]}
-        alt={`Imagem ${currentIndex}`}
-        width={720} // Largura da imagem
-        height={300} // Altura da imagem
+        alt={`Imagem ${currentIndex + 1}`}
+        width={720}
+        height={405}
         className="w-full h-auto"
+        priority={currentIndex === 0}
+        onLoadingComplete={handleImageLoad}
       />
-      <div className="absolute top-20 inset-x-0 flex justify-center">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
-          <div
+          <button
             key={index}
-            className={`h-2 w-2 mx-1 rounded-full transition duration-300 ease-in-out ${
+            onClick={() => {
+              setCurrentIndex(index);
+              setIsImageLoaded(false);
+            }}
+            className={`h-3 w-3 rounded-full ${
               currentIndex === index ? "bg-blue-500" : "bg-gray-300"
             }`}
           />
@@ -48,3 +60,6 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
+
+

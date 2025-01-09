@@ -12,7 +12,7 @@ import Vendedores from "./vendedores/page";
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)] pt-20">
+      <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)] pt-20">       
         {/* Ajuste a margem conforme necessário */}
         {/*<NavBar />*/}
 
