@@ -3,7 +3,7 @@ import Pacotes from "./pacotes/page";
 import Festas from "./festas/page";
 import Fotos from "./fotos/page";
 import Vendedores from "./vendedores/page";
-import Carousel from "./components/Carrocel/index";
+
 import Excursoes from "./excursoes/page";
 import Informacoes from "./informacoes/page";
 
@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center">
             {/* Coluna do Carrossel */}
             <div className="w-full md:w-1/2 flex justify-center">
-              <Carousel />
+              
             </div>
 
             {/* Coluna do Texto */}
