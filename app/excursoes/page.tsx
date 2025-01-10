@@ -23,10 +23,10 @@ const Excursoes = () => {
             {/* Altere flex para flex-col para empilhar os itens verticalmente */}
             <div className="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <span className="text-4xl font-semibold text-gray-900 dark:text-white">
+                <span className="text-2xl font-semibold text-gray-900 dark:text-white">
                   Mariana
                 </span>
-                <span className="text-4xl font-normal text-gray-500 dark:text-gray-400">
+                <span className="text-2xl font-normal text-gray-500 dark:text-gray-400">
                   <IoLocationOutline />
                 </span>
               </div>
@@ -50,10 +50,10 @@ const Excursoes = () => {
 
             <div className="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <span className="text-4xl font-semibold text-gray-900 dark:text-white">
+                <span className="text-2xl font-semibold text-gray-900 dark:text-white">
                   Viçosa
                 </span>
-                <span className="text-4xl font-normal text-gray-500 dark:text-gray-400">
+                <span className="text-2xl font-normal text-gray-500 dark:text-gray-400">
                   <IoLocationOutline />
                 </span>
               </div>
