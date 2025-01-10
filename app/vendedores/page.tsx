@@ -9,14 +9,14 @@ const Vendedores = () => {
         <title>Vendedores de Carnaval</title>
         <meta name="description" content="Encontre informações sobre os vendedores e fornecedores do carnaval." />
       </Head>
-      <main>
+      <main className='mt-10'>
 
         {/* Seção Vendedores Oficiais */}
         <section
           id="vendedores"
-          className='mt-10'
+          
         >
-          <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
+          <h1 className="text-4xl sm:text-2xl font-bold  mb-5 flex items-center justify-center text-center text-customBlue">
             Vendedores oficiais
           </h1>
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 w-full max-w-md sm:max-w-3xl mx-auto">

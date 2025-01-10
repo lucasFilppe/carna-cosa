@@ -89,9 +89,21 @@ const Blocos = () => {
                 </a>
               ))}
             </div>
+            
           </div>
         ))}
-
+         {/* Botão de Comprar Pacote */}
+         <div className="max-w-4xl mx-auto  text-center">
+              <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
+                <a
+                  href="https://wa.me/5531999119767"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Comprar Blocos
+                </a>
+              </button>
+            </div>
       </main>
     </>
   );
