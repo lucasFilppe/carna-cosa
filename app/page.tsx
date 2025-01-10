@@ -1,11 +1,13 @@
-import Blocos from "./blocos/page";
-import Pacotes from "./pacotes/page";
-import Festas from "./festas/page";
-import Fotos from "./fotos/page";
-import Vendedores from "./vendedores/page";
+import dynamic from "next/dynamic";
 
-import Excursoes from "./excursoes/page";
-import Informacoes from "./informacoes/page";
+// Importações dinâmicas dos componentes
+const Blocos = dynamic(() => import("./blocos/page"));
+const Pacotes = dynamic(() => import("./pacotes/page"));
+const Festas = dynamic(() => import("./festas/page"));
+const Fotos = dynamic(() => import("./fotos/page"));
+const Vendedores = dynamic(() => import("./vendedores/page"));
+const Excursoes = dynamic(() => import("./excursoes/page"));
+const Informacoes = dynamic(() => import("./informacoes/page"));
 
 export default function Home() {
   return (
@@ -15,11 +17,11 @@ export default function Home() {
         {/*<NavBar />*/}
 
         {/* Seção Início */}
-        <section  id="inicial" className="container mx-auto py-8">
+        <section id="inicial" className="container mx-auto py-8">
           <div className="flex flex-col md:flex-row items-center">
             {/* Coluna do Carrossel */}
             <div className="w-full md:w-1/2 flex justify-center">
-              
+              {/* Adicione seu carrossel aqui */}
             </div>
 
             {/* Coluna do Texto */}
@@ -27,7 +29,6 @@ export default function Home() {
               <h1 className="text-4xl font-bold text-center md:text-left text-customBlue mb-4">
                 Venha viver a magia do Carnaval de Ouro Preto!
               </h1>
-
               <p className="mb-4 text-white">
                 Prepare-se para mergulhar em um dos carnavais mais incríveis e
                 tradicionais do Brasil! Em meio às ladeiras históricas, casarios
@@ -54,15 +55,16 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Componentes carregados dinamicamente */}
         <Blocos />
-
         <Pacotes />
         <Festas />
         <Fotos />
         <Vendedores />
-        <Excursoes/>
+        <Excursoes />
         <Informacoes />
       </div>
     </>
   );
 }
+
