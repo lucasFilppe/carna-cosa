@@ -22,7 +22,7 @@ const Fotos = () => {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-5 gap-2 mt-6">
             <a
-              href="/foto1-cosa.png"
+              href="/foto-1.png"
               target="_blank"
               rel="noopener noreferrer"
               

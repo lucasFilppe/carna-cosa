@@ -1,94 +1,85 @@
-import Head from 'next/head';
-//import Image from 'next/image';
+import Head from "next/head";
+import Image from "next/image";
 
 const Blocos = () => {
   return (
     <>
       <Head>
-        <title>Blocos de Carnaval</title>
-        <meta name="description" content="Veja os blocos de carnaval disponíveis para aproveitar." />
+        <title>Blocos do Carnaval</title>
+        <meta name="description" content="Veja as atrações dos blocos de carnaval." />
       </Head>
       <main>
-         {/* Seção blocos */}
-         <section
-          id="Blocos"
-        >
-          {/*{[
-            {
-              title: "Bloco Caixão",
-              imgSrc: "/bloco-caixao.jpg",
-              spotifyLinks: [
-                "https://open.spotify.com/embed/artist/3CIIaeZuFYrAD6PRVyuO4U?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/6YzSM19LzpLH0nVKKU6Jsy?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/2uGKgNuq7MnKksXiSO6HjB?utm_source=generator async",
-                "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0fyXlA?utm_source=generator async",
-              ],
-            },
-            {
-              title: "Bloco Cabróbro",
-              imgSrc: "/bloco-cabrobro.jpg",
-              spotifyLinks: [
-                "https://open.spotify.com/embed/artist/7gJN8W0589FisSYJS17K54?utm_source=generator&theme=0 async",
-                "https://open.spotify.com/embed/artist/0pcoadNMmvrUyab1RxWBoV?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/1AuDtbIuaPj9LHnOUMT3C8?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/0NB5wv4kn6A919CLHUKRmk?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/22RXQj1gd5zEbcRjdxiJbu?utm_source=generator async",
-                
-              ],
-            },
-            {
-              title: "Bloco Praia",
-              imgSrc: "/bloco-praia.jpg",
-              spotifyLinks: [
-                "https://open.spotify.com/embed/artist/0drNUQoEie9lmZKhCdIE6n?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/2q9wk5fkeU2C9CgCKdh4AN?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/1mvpEXClANunyiHFtAXCxt?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/0IhzJFf4QBEz0ifqLwScKV?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/5M5NrRoOEBa49sW1hzKkuH?utm_source=generator async",
-              ],
-            },
-            {
-              title: "Bloco Chapado",
-              imgSrc: "/bloco-chapado.jpg",
-              spotifyLinks: [
-                "https://open.spotify.com/embed/artist/5nP8x4uEFjAAmDzwOEc9b8?utm_source=generator async" ,
-                "https://open.spotify.com/embed/artist/34dfPo3Zi55yM6oV46q4y7?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/6aoGgTKGqtsjj48ymcNs4Z?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/063wYkWkHrq5L5YWdrqjEt?utm_source=generator async",
-                "https://open.spotify.com/embed/artist/3SBOxPJ9Ilvge7XrOJb01C?utm_source=generator async",
+        {/* Seção Blocos */}
+        {[
+          {
+            title: "Bloco Caixão",
+            imgSrc: "/bloco-caixao.jpg",
+            attractions: [
+              { src: "/filipe-amorim.png", alt: "Atração de Filipe Amorim", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO26JYqd" },
+              { src: "/mc-daniel.png", alt: "Atração de Mc Daniel", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO47OcyR" },
+              { src: "/kvsh.png", alt: "Atração de Kvsh", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1qBmXk" },
+              { src: "/topo.png", alt: "DJ Topo", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0fyXlA" },
+            ]
+          },
+          {
+            title: "Bloco da Praia",
+            imgSrc: "/bloco-praia.jpg", // Caminho da imagem do novo bloco
+            attractions: [
+              { src: "/jammil.png", alt: "Atração de jammil e uma noits", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO03C9AB" },
+              { src: "/rick.png", alt: "Atração de Mc Rick", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0KndXn" },
+              { src: "/ig.png", alt: "Atração de Mc IG", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1nRZQG" },
+              { src: "/gbr.png", alt: "DJ GBR", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0mapaw" },
+              { src: "/chapeleiro.png", alt: "Atração de chapeleiro", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3oZvlT" },
+            ]
+          },
+          {
+            title: "Bloco da Cabróbro",
+            imgSrc: "/bloco-cabrobro.jpg", // Caminho da imagem do novo bloco
+            attractions: [
+              { src: "/filipe-ret.png", alt: "Atração de Filipe Ret", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO4iJL4k" },
+              { src: "/hariel.png", alt: "Atração de Hariel", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0aGty0" },
+              { src: "/akatu.png", alt: "Atração de Akatu", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0SMTSM" },
+              { src: "/ws.png", alt: "DJ Ws da igrejinha", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0pmFqO" },
+              { src: "/arana.png", alt: "Atração dj arana", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3oZvlT" },
+            ]
+          },
+        ].map((bloco, index) => (
+          <div key={index} className="my-6 rounded-lg w-full p-4">
+            <p className="text-4xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
+              {bloco.title}
+              <span className="ml-2">
+                <Image
+                  src={bloco.imgSrc}
+                  alt={`logo ${bloco.title}`}
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                />
+              </span>
+            </p>
 
-              ],
-            },
-            // Add other blocks similarly here
-          ].map((bloco, index) => (
-            <div key={index} className="my-6  rounded-lg w-full  p-4">
-              <p className="text-4xl  font-bold mb-4 flex items-center justify-center text-center text-customBlue">
-                {bloco.title}
-                <span className="ml-2">
+            {/* Atrações do Bloco */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
+              {bloco.attractions.map((atracao, idx) => (
+                <a
+                  key={idx}
+                  href={atracao.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center" // Centralizando o conteúdo
+                >
                   <Image
-                    src={bloco.imgSrc}
-                    alt={`logo ${bloco.title}`}
-                    width={60}
-                    height={60}
-                    className="rounded-full"
+                    src={atracao.src}
+                    alt={atracao.alt}
+                    width={400}
+                    height={300}
+                    className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
                   />
-                </span>
-              </p>
-              {bloco.spotifyLinks.map((link, i) => (
-                <iframe
-                key={i}
-                className="rounded-lg w-full h-[352px] sm:h-[152px] lg:h-[152px] lg:w-full mt-4"
-                src={link}
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-
+                </a>
               ))}
             </div>
-          ))}*/}
-          <p>sem iframes</p>
-        </section>
+          </div>
+        ))}
 
       </main>
     </>
@@ -96,3 +87,5 @@ const Blocos = () => {
 };
 
 export default Blocos;
+
+
