@@ -12,7 +12,7 @@ const Blocos = () => {
         {/* Seção Blocos */}
         {[
           {
-            title: "Bloco Caixão",
+            title: "Bloco do Caixão",
             imgSrc: "/bloco-caixao.jpg",
             attractions: [
               { src: "/filipe-amorim.png", alt: "Atração de Filipe Amorim", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO26JYqd" },
@@ -33,7 +33,7 @@ const Blocos = () => {
             ]
           },
           {
-            title: "Bloco da Cabróbro",
+            title: "Bloco Cabróbro",
             imgSrc: "/bloco-cabrobro.jpg", // Caminho da imagem do novo bloco
             attractions: [
               { src: "/filipe-ret.png", alt: "Atração de Filipe Ret", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO4iJL4k" },
@@ -44,7 +44,7 @@ const Blocos = () => {
             ]
           },
           {
-            title: "Bloco da Chapado",
+            title: "Bloco Chapado",
             imgSrc: "/bloco-chapado.jpg", // Caminho da imagem do novo bloco
             attractions: [
               { src: "/matue.png", alt: "Atração de Matue", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3aogAV" },
