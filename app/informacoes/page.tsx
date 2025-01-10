@@ -19,7 +19,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Onde será o evento?",
-    answer: "República Cosa Nostra",
+    answer: "República Cosa Nostra (Ouro Preto-MG)",
   },
 
 ];
