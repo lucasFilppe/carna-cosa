@@ -15,8 +15,9 @@ const Fotos = () => {
         {/* Seção Fotos */}
         <section
           id="fotos"
+          className="mt-10"
         >
-          <h1 className="text-xl sm:text-2xl font-bold mb-5 mt-5 flex items-center justify-center text-center text-customBlue">
+          <h1 className="text-4xl font-bold mb-5 mt-5 flex items-center justify-center text-center text-customBlue">
             Galeria de Fotos
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-5 gap-2 mt-6">
@@ -24,7 +25,7 @@ const Fotos = () => {
               href="/foto1-cosa.png"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-1.png"
@@ -39,7 +40,7 @@ const Fotos = () => {
               href="/foto-2.png"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-2.png"
@@ -54,7 +55,7 @@ const Fotos = () => {
               href="/foto-3.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-3.jpg"
@@ -69,7 +70,7 @@ const Fotos = () => {
               href="/foto-4.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-4.jpg"
@@ -84,7 +85,7 @@ const Fotos = () => {
               href="/foto-5.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-5.jpg"
@@ -99,7 +100,7 @@ const Fotos = () => {
               href="/foto-6.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-6.jpg"
@@ -114,7 +115,7 @@ const Fotos = () => {
               href="/foto-7.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-7.jpg"
@@ -129,7 +130,7 @@ const Fotos = () => {
               href="/foto-8.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-8.jpg"
@@ -144,7 +145,7 @@ const Fotos = () => {
               href="/foto-9.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-9.jpg"
@@ -159,7 +160,7 @@ const Fotos = () => {
               href="/foto-10.jpg"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-64 h-64 sm:w-64 sm:h-64"
+              
             >
               <Image
                 src="/foto-10.jpg"

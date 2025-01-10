@@ -11,8 +11,9 @@ const Festas = () => {
       <main>
         <section
           id="festas"
+          className="mt-10"
         >
-          <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
+          <h1 className="text-4xl font-bold flex items-center justify-center text-center text-customBlue">
             Festas
           </h1>
           <ImageGallery />

@@ -45,10 +45,11 @@ const Pacotes = () => {
         {/* Seção Pacotes */}
             <section
           id="pacotes"
+          className='mt-6'
 
         >
           <div className="min-h-screen p-5">
-            <h1 className="text-xl sm:text-2xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">
+            <h1 className="text-3xl  font-bold flex items-center mb-4 justify-center text-center text-customBlue ">
               Todos os Pacotes Incluem:
             </h1>
             <div className="max-w-4xl mx-auto mb-10">
@@ -68,7 +69,7 @@ const Pacotes = () => {
             </div>
 
             {/* Botão de Comprar Pacote */}
-            <div className="max-w-4xl mx-auto mt-10 text-center">
+            <div className="max-w-4xl mx-auto  text-center">
               <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
                 <a
                   href="https://wa.me/5531999119767"
