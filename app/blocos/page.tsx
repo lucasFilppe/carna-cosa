@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+//import Image from 'next/image';
 
 const Blocos = () => {
   return (
@@ -13,7 +13,7 @@ const Blocos = () => {
          <section
           id="Blocos"
         >
-          {[
+          {/*{[
             {
               title: "Bloco Caixão",
               imgSrc: "/bloco-caixao.jpg",
@@ -86,7 +86,8 @@ const Blocos = () => {
 
               ))}
             </div>
-          ))}
+          ))}*/}
+          <p>sem iframes</p>
         </section>
 
       </main>
