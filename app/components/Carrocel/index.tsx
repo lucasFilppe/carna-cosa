@@ -4,7 +4,6 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const images = [
-  
   "/carrocel/image-2.webp",
   "/carrocel/image-3.webp",
   "/carrocel/image-4.webp",
@@ -26,14 +25,14 @@ const Carousel = () => {
   return (
     <div className="relative ">
       <Image
-        src={images[currentIndex]}
+        src={images[currentIndex]} // A URL da imagem
         alt={`Imagem ${currentIndex + 1}`}
-        width={600}
-        height={300}
-        className="w-full h-auto"
-        priority={currentIndex === 0}
-        
+        width={600} // Defina a largura base
+        height={300} // Defina a altura base
+        layout="responsive" // Faz a imagem responsiva
+        priority={currentIndex === 0} // Prioriza a imagem principal
       />
+
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button
@@ -50,7 +49,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
-
-
-
