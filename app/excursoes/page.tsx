@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { IoLocationOutline } from "react-icons/io5";
+
 import { FaWhatsappSquare } from "react-icons/fa";
 import Image from "next/image";
 
