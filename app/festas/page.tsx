@@ -10,7 +10,7 @@ const Festas = () => {
       </Head>
       <main>
         <section
-          id="Festas"
+          id="festas"
         >
           <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
             Festas

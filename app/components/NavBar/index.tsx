@@ -1,7 +1,7 @@
 'use client';
 
 import CosaLogo from "../Logo";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { MdMenu } from "react-icons/md";
 import { Transition } from "@headlessui/react";
@@ -15,6 +15,9 @@ const Navbar = () => {
   // Alterna o estado do menu móvel
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // Fecha o menu ao clicar em um link (para dispositivos móveis)
+  const closeMenuOnClick = () => setIsOpen(false);
+
   // Links da barra de navegação
   const links = [
     { href: "/", label: "Início" },
@@ -23,7 +26,7 @@ const Navbar = () => {
     { href: "/festas", label: "Festas" },
     { href: "/fotos", label: "Fotos" },
     { href: "/vendedores", label: "Vendedores" },
-    { href: "/excursao", label: "Excursões" },
+    { href: "/excursoes", label: "Excursões" },
     { href: "/informacoes", label: "Informações" },
   ];
  
@@ -40,6 +43,22 @@ const Navbar = () => {
       rel: "noopener noreferrer",
     }),
   });
+
+  // UseEffect para fechar o menu ao clicar fora dele (para dispositivos móveis)
+  useEffect(() => {
+    if (isOpen) {
+      const handleOutsideClick = (e: Event) => {
+        // Fazendo um type assertion para garantir que `target` seja do tipo HTMLElement
+        if (!(e.target instanceof HTMLElement) || !e.target.closest("nav")) {
+          setIsOpen(false);
+        }
+      };
+      document.addEventListener("click", handleOutsideClick);
+      return () => {
+        document.removeEventListener("click", handleOutsideClick);
+      };
+    }
+  }, [isOpen]);
 
   return (
     <div className="w-full">
@@ -100,7 +119,7 @@ const Navbar = () => {
                         href={href}
                         className={getLinkClass(href)}
                         {...getLinkProps(href)}
-                        onClick={() => setIsOpen(false)} // Fecha o menu ao clicar no link
+                        onClick={closeMenuOnClick} // Fecha o menu ao clicar no link
                       >
                         {label}
                       </Link>
@@ -117,5 +136,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 

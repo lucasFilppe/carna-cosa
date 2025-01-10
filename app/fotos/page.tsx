@@ -14,7 +14,7 @@ const Fotos = () => {
       <main>
         {/* Seção Fotos */}
         <section
-          id="Fotos"
+          id="fotos"
         >
           <h1 className="text-xl sm:text-2xl font-bold mb-5 mt-5 flex items-center justify-center text-center text-customBlue">
             Galeria de Fotos

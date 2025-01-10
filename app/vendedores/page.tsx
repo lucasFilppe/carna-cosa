@@ -13,7 +13,7 @@ const Vendedores = () => {
 
         {/* Seção Vendedores Oficiais */}
         <section
-          id="Vendedores"
+          id="vendedores"
         >
           <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
             Vendedores oficiais

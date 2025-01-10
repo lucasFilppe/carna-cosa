@@ -39,6 +39,10 @@ const Informacoes = () => {
           content="Saiba todas as informações importantes para curtir o carnaval com segurança e diversão."
         />
       </Head>
+      
+        <section
+          id="informacoes"
+        >
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow py-12 px-4 ">
           <section id="faq" className="py-12 px-4 ">
@@ -136,6 +140,7 @@ const Informacoes = () => {
           </footer>
         </div>
       </div>
+      </section>
     </>
   );
 };

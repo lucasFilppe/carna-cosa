@@ -11,7 +11,7 @@ const Blocos = () => {
       <main>
          {/* Seção blocos */}
          <section
-          id="Blocos"
+          id="blocos"
         >
           {[
             {

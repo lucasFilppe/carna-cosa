@@ -44,7 +44,7 @@ const Pacotes = () => {
       <main>
         {/* Seção Pacotes */}
             <section
-          id="Pacotes"
+          id="pacotes"
 
         >
           <div className="min-h-screen p-5">
