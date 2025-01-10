@@ -4,11 +4,11 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const images = [
-  "/carrocel/image-1.jpg",
-  "/carrocel/image-2.jpg",
-  "/carrocel/image-3.jpg",
-  "/carrocel/image-4.jpg",
-  "/carrocel/image-5.jpg",
+  "/carrocel/image-1.webp",
+  "/carrocel/image-2.webp",
+  "/carrocel/image-3.webp",
+  "/carrocel/image-4.webp",
+  "/carrocel/image-5.webp",
 ];
 
 const Carousel = () => {
