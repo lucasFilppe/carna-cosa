@@ -13,22 +13,15 @@ const images = [
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isImageLoaded, setIsImageLoaded] = useState(true);
 
-  // Memoriza a função para evitar recriação
   const changeImage = useCallback(() => {
-    if (isImageLoaded) {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setIsImageLoaded(false);
-    }
-  }, [isImageLoaded]); // Remove images.length das dependências
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(changeImage, 2000);
     return () => clearInterval(interval);
   }, [changeImage]);
-
-  const handleImageLoad = () => setIsImageLoaded(true);
 
   return (
     <div className="relative w-full max-w-[720px] mx-auto">
@@ -39,18 +32,15 @@ const Carousel = () => {
         height={405}
         className="w-full h-auto"
         priority={currentIndex === 0}
-        onLoadingComplete={handleImageLoad}
+        
       />
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button
             key={index}
-            onClick={() => {
-              setCurrentIndex(index);
-              setIsImageLoaded(false);
-            }}
-            className={`h-3 w-3 rounded-full ${
-              currentIndex === index ? "bg-blue-500" : "bg-gray-300"
+            onClick={() => setCurrentIndex(index)}
+            className={`h-3 w-3 rounded-full transition-all duration-300 ${
+              currentIndex === index ? "bg-blue-500 scale-125" : "bg-gray-300"
             }`}
           />
         ))}
@@ -60,6 +50,7 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
 
 
 
