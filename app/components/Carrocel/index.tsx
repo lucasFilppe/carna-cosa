@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const images = [
-  "/carrocel/image-1.webp",
+  
   "/carrocel/image-2.webp",
   "/carrocel/image-3.webp",
   "/carrocel/image-4.webp",
