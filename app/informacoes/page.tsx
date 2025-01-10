@@ -44,7 +44,7 @@ const Informacoes = () => {
           id="informacoes"
         >
       <div className="flex flex-col min-h-screen">
-        <main className="flex-grow py-12 px-4 ">
+        <main className="flex-grow  px-4 ">
           <section id="faq" className="py-12 px-4 ">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-8 text-customBlue">
@@ -67,7 +67,7 @@ const Informacoes = () => {
                       </span>
                     </button>
                     {activeIndex === index && (
-                      <p className="mt-2 text-gray-700">{item.answer}</p>
+                      <p className="mt-2 text-white">{item.answer}</p>
                     )}
                   </div>
                 ))}
@@ -79,7 +79,7 @@ const Informacoes = () => {
         {/* Footer */}
         <div className="bg-black">
           <footer className="w-full flex flex-col items-center text-center text-surface text-white">
-            <div className="container px-6 pt-6">
+            <div className="container px-6 ">
               <div className="mb-6 flex justify-center space-x-2">
                 {/* Ícone do Facebook */}
                 <a

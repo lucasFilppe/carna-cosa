@@ -43,6 +43,17 @@ const Blocos = () => {
               { src: "/arana.png", alt: "Atração dj arana", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3oZvlT" },
             ]
           },
+          {
+            title: "Bloco da Chapado",
+            imgSrc: "/bloco-chapado.jpg", // Caminho da imagem do novo bloco
+            attractions: [
+              { src: "/matue.png", alt: "Atração de Matue", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3aogAV" },
+              { src: "/mumuzinho.png", alt: "Atração de Mumuzinho", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1LYFfD" },
+              { src: "/tutu.png", alt: "Atração de MC tutu", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3DC7Bg" },
+              { src: "/victor.png", alt: "Atração Voctor low", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evNZZalxf" },
+              { src: "/ariel.png", alt: "Atração Ariel B", link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO2giyOK" },
+            ]
+          },
         ].map((bloco, index) => (
           <div key={index} className="my-6 rounded-lg w-full p-4">
             <p className="text-4xl font-bold mb-4 flex items-center justify-center text-center text-customBlue">

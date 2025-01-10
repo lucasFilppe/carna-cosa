@@ -14,13 +14,14 @@ const Vendedores = () => {
         {/* Seção Vendedores Oficiais */}
         <section
           id="vendedores"
+          className='mt-10'
         >
           <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
             Vendedores oficiais
           </h1>
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 w-full max-w-md sm:max-w-3xl mx-auto">
             {/* Card de vendedor */}
-            <div className="bg-white flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[250px] w-full sm:w-[48%] mb-5">
+            <div className="bg-black flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[250px] w-full sm:w-[48%] mb-5">
               <div className="relative w-full flex justify-center">
                 <Image
                   src="/joaopaulomeneses.jpg"
@@ -46,7 +47,7 @@ const Vendedores = () => {
             </div>
 
             {/* Card do próximo vendedor */}
-            <div className="bg-white flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[250px] min-h-[250px] w-full sm:w-[48%] mb-5">
+            <div className="bg-black flex flex-col items-center p-4 border-4 border-transparent hover:border-customBlue transition-all duration-300 rounded-lg min-h-[250px] min-h-[250px] w-full sm:w-[48%] mb-5">
               <div className="relative w-full flex justify-center">
                 <Image
                   src="/arkimedes.jpg"
