@@ -28,7 +28,7 @@ const Carousel = () => {
       <Image
         src={images[currentIndex]}
         alt={`Imagem ${currentIndex + 1}`}
-        width={300}
+        width={600}
         height={300}
         className="w-full h-auto"
         priority={currentIndex === 0}
