@@ -24,12 +24,12 @@ const Carousel = () => {
   }, [changeImage]);
 
   return (
-    <div className="relative w-full max-w-[720px] mx-auto">
+    <div className="relative ">
       <Image
         src={images[currentIndex]}
         alt={`Imagem ${currentIndex + 1}`}
-        width={720}
-        height={405}
+        width={300}
+        height={300}
         className="w-full h-auto"
         priority={currentIndex === 0}
         
