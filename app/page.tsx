@@ -6,7 +6,6 @@ const Pacotes = dynamic(() => import("./pacotes/page"));
 const Festas = dynamic(() => import("./festas/page"));
 const Fotos = dynamic(() => import("./fotos/page"));
 const Vendedores = dynamic(() => import("./vendedores/page"));
-const Excursoes = dynamic(() => import("./excursoes/page"));
 const Informacoes = dynamic(() => import("./informacoes/page"));
 
 export default function Home() {
@@ -43,7 +42,7 @@ export default function Home() {
         <Festas />
         <Fotos />
         <Vendedores />
-        <Excursoes />
+        {/*<Excursoes />*/}
         <Informacoes />
       </div>
     </>

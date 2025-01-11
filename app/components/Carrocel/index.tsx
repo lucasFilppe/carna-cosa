@@ -31,7 +31,7 @@ const Carousel: FC<CarouselProps> = ({ images }) => {
         alt={images[currentIndex].alt}
         width={400}
         height={300}
-        className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+        className=" w-full h-full object-cover"
       />
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
