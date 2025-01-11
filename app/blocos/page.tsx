@@ -137,8 +137,8 @@ const Blocos = () => {
       </Head>
       <main>
         {blocos.map((bloco, index) => (
-          <div key={index} className="my-6 rounded-lg w-full p-4">
-            <p className="text-xl font-bold  flex items-center justify-center text-center text-customBlue mt-10">
+          <div key={index} className="rounded-lg w-full p-10">
+            <p className="text-xl font-bold  flex items-center justify-center text-center text-customBlue mt-5">
               {bloco.title}
               <span className="ml-2">
                 <Image

@@ -43,7 +43,7 @@ const Informacoes = () => {
         <section
           id="informacoes"
         >
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col ">
         <main className="flex-grow  px-4 ">
           <section id="faq" className="py-12 px-4 ">
             <div className="max-w-4xl mx-auto">

@@ -17,11 +17,10 @@ export default function Home() {
         {/*<NavBar />*/}
 
         {/* Seção Início */}
-        <section id="inicial" className="flex justify-center items-center p-5">
-          <div className="">
+        <section id="inicial" className=" p-5">
 
             {/* Coluna do Texto */}
-            <div className="w-full md:w-1/2 p-5">
+            <div className="">
               <h1 className="text-xl font-bold text-center  text-customBlue mb-4">
               Carnaval em Ouro Preto: Blocos, Pacotes e Festas Imperdíveis
               </h1>
@@ -36,7 +35,6 @@ export default function Home() {
                 perfeito! 🥳🎭
               </p>
             </div>
-          </div>
         </section>
 
         {/* Componentes carregados dinamicamente */}
