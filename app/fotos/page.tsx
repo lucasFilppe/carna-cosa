@@ -17,7 +17,7 @@ const Fotos = () => {
           id="fotos"
           className="mt-10"
         >
-          <h1 className="text-4xl font-bold mb-5 mt-5 flex items-center justify-center text-center text-customBlue">
+          <h1 className="text-xl font-bold mb-5 mt-5 flex items-center justify-center text-center text-customBlue">
             Galeria de Fotos
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-5 gap-2 mt-6">

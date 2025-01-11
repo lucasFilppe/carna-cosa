@@ -17,39 +17,23 @@ export default function Home() {
         {/*<NavBar />*/}
 
         {/* Seção Início */}
-        <section id="inicial" className="container mx-auto py-8">
-          <div className="flex flex-col md:flex-row items-center">
-            {/* Coluna do Carrossel */}
-            <div className="w-full md:w-1/2 flex justify-center">
-              {/* Adicione seu carrossel aqui */}
-            </div>
+        <section id="inicial" className="flex justify-center items-center p-5">
+          <div className="">
 
             {/* Coluna do Texto */}
             <div className="w-full md:w-1/2 p-5">
-              <h1 className="text-4xl font-bold text-center md:text-left text-customBlue mb-4">
-                Venha viver a magia do Carnaval de Ouro Preto!
+              <h1 className="text-xl font-bold text-center  text-customBlue mb-4">
+              Carnaval em Ouro Preto: Blocos, Pacotes e Festas Imperdíveis
               </h1>
-              <p className="mb-4 text-white">
-                Prepare-se para mergulhar em um dos carnavais mais incríveis e
-                tradicionais do Brasil! Em meio às ladeiras históricas, casarios
-                coloniais e o som contagiante das baterias, Ouro Preto se
-                transforma em um palco vibrante de cultura, folia e alegria.
-              </p>
-              <p className="mb-4 text-white">
-                Aqui, o passado e o presente se encontram em uma explosão de
-                cores, fantasias e música. Dos blocos caricatos aos grandes
-                desfiles, cada canto da cidade pulsa com energia, diversidade e
-                a hospitalidade única de quem sabe fazer festa como ninguém.
-              </p>
-              <p className="mb-4 text-white">
-                Não importa se você busca a emoção dos blocos de rua, os shows
-                ao vivo ou a vibe descontraída das repúblicas: Ouro Preto tem o
-                carnaval perfeito para você.
-              </p>
-              <p className="mb-4 text-white">
-                Reúna os amigos, escolha sua fantasia e venha escrever momentos
-                inesquecíveis no destino mais charmoso e animado do Brasil. Ouro
-                Preto espera por você! 🎭🎶💃
+              <p className=" text-white">
+                O Carnaval de Ouro Preto é uma experiência única, repleta de
+                energia e tradição! Descubra os blocos icônicos, com atrações
+                incríveis que vão do samba ao funk, animando as ladeiras
+                históricas. Confira também os pacotes exclusivos, que garantem
+                acesso às melhores festas e comodidades, e explore uma
+                programação intensa de festas memoráveis, onde a diversão não
+                tem hora para acabar. Navegue pela página e planeje seu Carnaval
+                perfeito! 🥳🎭
               </p>
             </div>
           </div>
@@ -67,4 +51,3 @@ export default function Home() {
     </>
   );
 }
-

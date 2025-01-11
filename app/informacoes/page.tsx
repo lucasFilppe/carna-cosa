@@ -47,7 +47,7 @@ const Informacoes = () => {
         <main className="flex-grow  px-4 ">
           <section id="faq" className="py-12 px-4 ">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-8 text-customBlue">
+              <h2 className="text-xl font-bold text-center mb-8 text-customBlue">
                 Perguntas Frequentes
               </h2>
               <div className="space-y-4">

@@ -13,7 +13,7 @@ const Festas = () => {
           id="festas"
           className="mt-10"
         >
-          <h1 className="text-4xl font-bold flex items-center justify-center text-center text-customBlue">
+          <h1 className="text-xl font-bold flex items-center justify-center text-center text-customBlue">
             Festas
           </h1>
           <ImageGallery />

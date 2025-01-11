@@ -16,7 +16,7 @@ const Vendedores = () => {
           id="vendedores"
           
         >
-          <h1 className="text-4xl sm:text-2xl font-bold  mb-5 flex items-center justify-center text-center text-customBlue">
+          <h1 className="text-xl sm:text-2xl font-bold  mb-5 flex items-center justify-center text-center text-customBlue">
             Vendedores oficiais
           </h1>
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 w-full max-w-md sm:max-w-3xl mx-auto">

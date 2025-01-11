@@ -15,7 +15,7 @@ const Excursoes = () => {
       </Head>
       <main className="mt-10">
         {/* Seção excursoes */}
-        <h1 className="text-4xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
+        <h1 className="text-xl sm:text-2xl font-bold mt-5 mb-5 flex items-center justify-center text-center text-customBlue">
             Excursoẽs
           </h1>
         <section id="excursoes" className="mt-20 flex justify-center">
