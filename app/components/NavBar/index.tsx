@@ -26,7 +26,7 @@ const Navbar = () => {
     { href: "/festas", label: "Festas" },
     { href: "/fotos", label: "Fotos" },
     { href: "/vendedores", label: "Vendedores" },
-    { href: "#excursoes", label: "Excursões" },
+    { href: "https://wa.me/5537998418715" , label: "Excursões" },
     { href: "/informacoes", label: "Informações" },
   ];
  
