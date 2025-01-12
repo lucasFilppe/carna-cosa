@@ -1,128 +1,27 @@
 import Head from "next/head";
 import Image from "next/image";
-import Carousel from "../components/Carrocel/index";
 
 const Blocos = () => {
   const blocos = [
     {
       title: "Bloco do Caixão",
       imgSrc: "/bloco-caixao.jpg",
-      attractions: [
-        {
-          src: "/filipe-amorim.png",
-          alt: "Atração de Filipe Amorim",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO26JYqd",
-        },
-        {
-          src: "/mc-daniel.png",
-          alt: "Atração de Mc Daniel",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO47OcyR",
-        },
-        {
-          src: "/kvsh.png",
-          alt: "Atração de Kvsh",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1qBmXk",
-        },
-        {
-          src: "/topo.png",
-          alt: "DJ Topo",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0fyXlA",
-        },
-      ],
+      lineUp: "/line-chapado.png",
     },
-    // ... Outros blocos
     {
       title: "Bloco da Praia",
-      imgSrc: "/bloco-praia.jpg", // Caminho da imagem do novo bloco
-      attractions: [
-        {
-          src: "/jammil.png",
-          alt: "Atração de jammil e uma noits",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO03C9AB",
-        },
-        {
-          src: "/rick.png",
-          alt: "Atração de Mc Rick",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0KndXn",
-        },
-        {
-          src: "/ig.png",
-          alt: "Atração de Mc IG",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1nRZQG",
-        },
-        {
-          src: "/gbr.png",
-          alt: "DJ GBR",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0mapaw",
-        },
-        {
-          src: "/chapeleiro.png",
-          alt: "Atração de chapeleiro",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3oZvlT",
-        },
-      ],
+      imgSrc: "/bloco-praia.jpg",
+      lineUp: "/line-praia.jpg",
     },
     {
-      title: "Bloco Cabróbro",
+      title: "Bloco Cabróbró",
       imgSrc: "/bloco-cabrobro.jpg", // Caminho da imagem do novo bloco
-      attractions: [
-        {
-          src: "/filipe-ret.png",
-          alt: "Atração de Filipe Ret",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO4iJL4k",
-        },
-        {
-          src: "/hariel.png",
-          alt: "Atração de Hariel",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0aGty0",
-        },
-        {
-          src: "/akatu.png",
-          alt: "Atração de Akatu",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0SMTSM",
-        },
-        {
-          src: "/ws.png",
-          alt: "DJ Ws da igrejinha",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0pmFqO",
-        },
-        {
-          src: "/arana.png",
-          alt: "Atração dj arana",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3oZvlT",
-        },
-      ],
+      lineUp:"/line-cabrobro.jpg"
     },
     {
       title: "Bloco Chapado",
-      imgSrc: "/bloco-chapado.jpg", // Caminho da imagem do novo bloco
-      attractions: [
-        {
-          src: "/matue.png",
-          alt: "Atração de Matue",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3aogAV",
-        },
-        {
-          src: "/mumuzinho.png",
-          alt: "Atração de Mumuzinho",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1LYFfD",
-        },
-        {
-          src: "/tutu.png",
-          alt: "Atração de MC tutu",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3DC7Bg",
-        },
-        {
-          src: "/victor.png",
-          alt: "Atração Voctor low",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evNZZalxf",
-        },
-        {
-          src: "/ariel.png",
-          alt: "Atração Ariel B",
-          link: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO2giyOK",
-        },
-      ],
+      imgSrc: "/bloco-chapado.jpg",
+      lineUp: "/line-chapado.jpg",
     },
   ];
 
@@ -138,12 +37,12 @@ const Blocos = () => {
       <main>
         {blocos.map((bloco, index) => (
           <div key={index} className="rounded-lg w-full p-10">
-            <p className="text-xl font-bold  flex items-center justify-center text-center text-customBlue mt-5">
+            <p className="text-xl font-bold flex items-center justify-center text-center text-customBlue mt-5">
               {bloco.title}
               <span className="ml-2">
                 <Image
                   src={bloco.imgSrc}
-                  alt={`logo ${bloco.title}`}
+                  alt={`Logo do ${bloco.title}`}
                   width={60}
                   height={60}
                   className="rounded-full"
@@ -151,16 +50,20 @@ const Blocos = () => {
               </span>
             </p>
 
-            {/* Substituir imagens estáticas pelo carrossel */}
-            <div className="flex justify-center items-center ">
-            <div className="w-full h-auto sm:w-96 sm:h-[300px]">
-              <Carousel images={bloco.attractions} />
-              </div>
+            {/* Exibindo o line-up do bloco */}
+            <div className="flex justify-center items-center mt-4">
+              <Image
+                src={bloco.lineUp}
+                alt={`Line-up do bloco ${bloco.title}`}
+                width={400}
+                height={300}
+                className="rounded-lg"
+              />
             </div>
           </div>
         ))}
 
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center mt-6">
           <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
             <a
               href="https://wa.me/5531996186158"

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 const Fotos = () => {
   return (
@@ -176,13 +177,11 @@ const Fotos = () => {
           {/* Botão de Comprar Pacote */}
           <div className="max-w-4xl mx-auto mt-10 text-center">
             <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
-              <a
-                href="https://drive.google.com/drive/u/0/folders/1f41dBduCMMpiIMg9YjY7Jak68Zmpu3TM"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <Link href="/galeria">
+            
                 Veja mais...
-              </a>
+    
+              </Link>
             </button>
           </div>
         </section>

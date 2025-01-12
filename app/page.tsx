@@ -17,23 +17,23 @@ export default function Home() {
 
         {/* Seção Início */}
         <section id="inicial" className=" p-5">
-
-            {/* Coluna do Texto */}
-            <div className="">
-              <h1 className="text-xl font-bold text-center  text-customBlue mb-4">
+          {/* Coluna do Texto */}
+          <div className="">
+            <h1 className="text-xl font-bold text-center  text-customBlue mb-4">
               Carnaval em Ouro Preto: Blocos, Pacotes e Festas Imperdíveis
-              </h1>
-              <p className=" text-white">
-                O Carnaval de Ouro Preto é uma experiência única, repleta de
-                energia e tradição! Descubra os blocos icônicos, com atrações
-                incríveis que vão do samba ao funk, animando as ladeiras
-                históricas. Confira também os pacotes exclusivos, que garantem
-                acesso às melhores festas e comodidades, e explore uma
-                programação intensa de festas memoráveis, onde a diversão não
-                tem hora para acabar. Navegue pela página e planeje seu Carnaval
-                perfeito! 🥳🎭
-              </p>
-            </div>
+            </h1>
+            <p className=" text-white">
+              O Carnaval de Ouro Preto é uma experiência única, repleta de
+              energia e tradição! 5 dias de Hospedagem no carnaval universitário
+              de Ouro Preto, com localização privilegiada onde, diferente de
+              qualquer outro lugar, você irá sentir a verdadeira energia de um
+              carnaval universitário ouro-pretano! Uma experiência cultural
+              única e inesquecível onde, carnaval passado, mais de 600 pessoas
+              experimentaram a alegria do nosso pacote republicano e essa
+              experiência é surreal. Com um OPEN BAR SURREAL, durante todo o
+              carnaval e os 4 maiores Blocos de Ouro Preto.
+            </p>
+          </div>
         </section>
 
         {/* Componentes carregados dinamicamente */}

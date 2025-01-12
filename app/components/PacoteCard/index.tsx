@@ -9,8 +9,6 @@ interface Pacote {
   tipo: string;
   items: Item[];
 }
-
-// Componente PacoteCard usando export default
 export default function PacoteCard({ titulo, tipo, items }: Pacote) {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 mb-6">
@@ -18,8 +16,8 @@ export default function PacoteCard({ titulo, tipo, items }: Pacote) {
       <p className="text-sm text-gray-600 mb-2">{tipo}</p>
       <ul className="list-disc list-inside text-gray-700">
         {items.map((item, index) => (
-          <li key={index} className="flex items-start gap-2">
-            {item.emoji && <span>{item.emoji}</span>}
+          <li key={index} className="flex items-center gap-2"> {/* Alterei aqui */}
+            {item.emoji && <span className="text-3xl">{item.emoji}</span>}
             <span>{item.text}</span>
           </li>
         ))}
@@ -38,3 +36,4 @@ export default function PacoteCard({ titulo, tipo, items }: Pacote) {
     </div>
   );
 }
+
