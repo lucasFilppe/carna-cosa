@@ -1,4 +1,7 @@
+"use client";
+
 import dynamic from "next/dynamic";
+import { useRef } from "react";
 
 // Importações dinâmicas dos componentes
 const Blocos = dynamic(() => import("./blocos/page"));
@@ -9,6 +12,17 @@ const Vendedores = dynamic(() => import("./vendedores/page"));
 const Informacoes = dynamic(() => import("./informacoes/page"));
 
 export default function Home() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  };
   return (
     <>
       <div className="min-h-screen flex flex-col bg-gray-white font-geist pt-10">
@@ -33,6 +47,25 @@ export default function Home() {
               experiência é surreal. Com um OPEN BAR SURREAL, durante todo o
               carnaval e os 4 maiores Blocos de Ouro Preto.
             </p>
+          </div>
+
+          {/* Coluna do Vídeo */}
+          <div className="flex justify-center mt-3">
+            <div className="relative w-full max-w-2xl">
+              <video
+                ref={videoRef}
+                className="rounded-lg shadow-lg cursor-pointer"
+                autoPlay
+                muted
+                loop
+                controls
+                onClick={handleVideoClick}
+                style={{ height: "620px", width: "100%" }} // Define altura e largura específicas
+              >
+                <source src="/videos/after-movie3.mp4" type="video/mp4" />
+                Seu navegador não suporta a reprodução de vídeos.
+              </video>
+            </div>
           </div>
         </section>
 
