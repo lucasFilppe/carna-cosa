@@ -14,174 +14,98 @@ const Fotos = () => {
       </Head>
       <main>
         {/* Seção Fotos */}
-        <section
-          id="fotos"
-          className="mt-10"
-        >
+        <section id="fotos" className="mt-10">
           <h1 className="text-xl font-bold mb-5 mt-5 flex items-center justify-center text-center text-customBlue">
             Galeria de Fotos
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-5 gap-2 mt-6">
-            <a
-              href="/foto-1.png"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-1.png"
-                alt="Post 1"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
+            <Image
+              src="/galeria/foto2.JPG"
+              alt="Post 1"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
 
-            <a
-              href="/foto-2.png"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-2.png"
-                alt="Post 2"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
+            <Image
+              src="/galeria/foto10.jpg"
+              alt="Post 2"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
 
-            <a
-              href="/foto-3.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-3.jpg"
-                alt="Post 3"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
+            <Image
+              src="/galeria/foto1.jpg"
+              alt="Post 2"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
 
-            <a
-              href="/foto-4.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-4.jpg"
-                alt="Post 4"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
+            <Image
+              src="/galeria/foto5.jpg"
+              alt="Post 2"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
 
-            <a
-              href="/foto-5.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-5.jpg"
-                alt="Post 5"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
+            <Image
+              src="/galeria/foto6.jpg"
+              alt="Post 3"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
 
-            <a
-              href="/foto-6.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-6.jpg"
-                alt="Post 6"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
+            <Image
+              src="/galeria/foto13.png"
+              alt="Post 3"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
 
-            <a
-              href="/foto-7.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-7.jpg"
-                alt="Post 7"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
+            <Image
+              src="/galeria/foto8.jpg"
+              alt="Post 3"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
 
-            <a
-              href="/foto-8.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-8.jpg"
-                alt="Post 8"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
+            <Image
+              src="/galeria/foto12.jpg"
+              alt="Post 3"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
 
-            <a
-              href="/foto-9.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-9.jpg"
-                alt="Post 9"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
+            <Image
+              src="/galeria/foto14.png"
+              alt="Post 3"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
 
-            <a
-              href="/foto-10.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <Image
-                src="/foto-10.jpg"
-                alt="Post 10"
-                width={400} // Define a largura da imagem
-                height={300} // Define a altura da imagem
-                className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
-              />
-            </a>
-            {/* Repita para cada imagem */}
+            <Image
+              src="/galeria/foto15.png"
+              alt="Post 3"
+              width={400} // Define a largura da imagem
+              height={300} // Define a altura da imagem
+              className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
+            />
+
+            
           </div>
 
           {/* Botão de Comprar Pacote */}
           <div className="max-w-4xl mx-auto mt-10 text-center">
             <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
-            <Link href="/galeria">
-            
-                Veja mais...
-    
-              </Link>
+              <Link href="/galeria">Veja mais...</Link>
             </button>
           </div>
         </section>

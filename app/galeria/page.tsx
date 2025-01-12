@@ -9,10 +9,24 @@ import "react-image-lightbox/style.css"; // Importa o estilo do Lightbox
 export default function Galeria() {
   const images = [
     "/foto-1.png",
-    "/foto-1.png",
-    "/foto-1.png",
-    "/foto-1.png",
-    "/foto-1.png",
+    "/foto-2.png",
+    "/foto-4.jpg",
+    "/foto-5.jpg",
+    "/foto-6.jpg",
+    "/foto-7.jpg",
+    "/foto-8.jpg",
+    "/foto-9.jpg",
+    "/foto-10.jpg",
+    "/galeria/foto7.jpg",
+    "/foto-11.jpg",
+    "/foto-12.jpg",
+    "/foto-13.jpg",
+    "/foto-14.jpg",
+    "/foto-15.png",
+    "/foto-16.png",
+    "/foto-17.png",
+    "/foto-18.png",
+
   ];
 
   const [isOpen, setIsOpen] = useState(false);

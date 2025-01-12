@@ -5,7 +5,7 @@ export default function ButtonFloating() {
     <a
       href="https://www.instagram.com/carnacosa/"
       target="_blank"
-      className="fixed bottom-4 right-4 bg-blue-500 rounded-full p-4 shadow-lg hover:bg-blue-600 transition-colors"
+      className="fixed bottom-4 right-4  rounded-full p-4 shadow-lg hover:bg-customBlue transition-colors"
       aria-label="Go to link"
     >
        <Image 
