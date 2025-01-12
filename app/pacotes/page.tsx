@@ -19,7 +19,7 @@ const Pacotes = () => {
           tipo: "Blocos na pista e camarote",
           items: [
             { emoji: "⚰", text: "Abadá :: Bloco do Caixão (Camarote)" },
-            { emoji: "🦐", text: "Abadá :: Bloco Cabrobró (Camarote)" },
+            { emoji: "🦐", text: "Abadá :: Bloco Cabrobró (Pista)" },
             { emoji: "🦀", text: "Abadá :: Bloco da Praia (Pista)" },
             { emoji: "🌵", text: "Abadá :: Bloco Chapado (Pista)" },
           ],
