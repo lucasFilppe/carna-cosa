@@ -53,7 +53,7 @@ const Pacotes = () => {
               Todos os Pacotes Incluem:
             </h1>
             <div className="max-w-4xl mx-auto mb-10">
-              <ul className="list-disc list-inside text-lg text-white">
+              <ul className="list-disc list-inside text-md text-white">
                 <li>🏠 5 dias de Hospedagem com almoço</li>
                 <li>🍻 24h de Open Bar durante todos os dias</li>
                 <li>🎭 6 Festas exclusivas</li>
