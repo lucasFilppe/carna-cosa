@@ -25,7 +25,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-gray-white font-geist ">
+      <div className="min-h-screen flex flex-col bg-gray-white font-geist pt-10">
         {/* Ajuste a margem conforme necessário */}
         {/*<NavBar />*/}
 
