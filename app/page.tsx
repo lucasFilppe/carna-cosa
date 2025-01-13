@@ -25,7 +25,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-gray-white font-geist pt-10">
+      <div className="min-h-screen flex flex-col bg-gray-white font-geist ">
         {/* Ajuste a margem conforme necessário */}
         {/*<NavBar />*/}
 
@@ -37,7 +37,7 @@ export default function Home() {
               "Carnaval de Ouro Preto: A Experiência Universitária que Você
               Nunca Esquecerá!"
             </h1>
-            <p className="text-gray-100 text-base sm:text-lg leading-relaxed mb-6">
+            <p className="text-gray-100 text-sm leading-relaxed mb-6">
               O{" "}
               <span className="font-bold text-customBlue">
                 Carnaval de Ouro Preto

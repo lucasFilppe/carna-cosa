@@ -9,15 +9,16 @@ const Blocos = () => {
       lineUp: "/line-chapado.png",
     },
     {
-      title: "Bloco da Praia",
-      imgSrc: "/bloco-praia.jpg",
-      lineUp: "/line-praia.jpg",
-    },
-    {
       title: "Bloco Cabróbró",
       imgSrc: "/bloco-cabrobro.jpg", // Caminho da imagem do novo bloco
       lineUp:"/line-cabrobro.jpg"
     },
+    {
+      title: "Bloco da Praia",
+      imgSrc: "/bloco-praia.jpg",
+      lineUp: "/line-praia.jpg",
+    },
+    
     {
       title: "Bloco Chapado",
       imgSrc: "/bloco-chapado.jpg",
@@ -43,8 +44,8 @@ const Blocos = () => {
                 <Image
                   src={bloco.imgSrc}
                   alt={`Logo do ${bloco.title}`}
-                  width={60}
-                  height={60}
+                  width={40}
+                  height={40}
                   className="rounded-full"
                 />
               </span>

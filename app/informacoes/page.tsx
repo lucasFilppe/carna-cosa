@@ -21,6 +21,11 @@ const faqData: FAQItem[] = [
     question: "Onde será o evento?",
     answer: "República Cosa Nostra (Ouro Preto-MG)",
   },
+  {
+    question: "Posso personalizar meu abadá?",
+    answer: "Sim, e claro!. Desde que seja mantido a logo do Bloco no abadá"
+  },
+
 
 ];
 
@@ -67,7 +72,7 @@ const Informacoes = () => {
                       </span>
                     </button>
                     {activeIndex === index && (
-                      <p className="mt-2 text-white">{item.answer}</p>
+                      <p className="mt-2 text-white text-sm">{item.answer}</p>
                     )}
                   </div>
                 ))}

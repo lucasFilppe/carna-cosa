@@ -77,7 +77,7 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="focus:outline-none"
             >
-              {isOpen ? <AiOutlineClose size={50} /> : <MdMenu size={50} />}
+              {isOpen ? <AiOutlineClose size={30} /> : <MdMenu size={30} />}
             </button>
           </div>
 

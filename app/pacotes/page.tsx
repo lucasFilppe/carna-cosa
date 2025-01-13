@@ -53,14 +53,14 @@ const Pacotes = () => {
               Todos os Pacotes Incluem:
             </h1>
             <div className="max-w-4xl mx-auto mb-10">
-              <ul className="list-disc list-inside text-md text-white">
+              <ol className=" text-md text-white">
                 <li>🏠 5 dias de Hospedagem com almoço</li>
                 <li>🍻 24h de Open Bar durante todos os dias</li>
                 <li>🎭 6 Festas exclusivas</li>
                 <li>🌟 Acesso aos 4 maiores blocos de Ouro Preto</li>
                 <li>👮🏻 Assistência 24h - Equipe de segurança e limpeza</li>
                 <li>👓 Kit Folia - Brindes personalizados</li>
-              </ul>
+              </ol>
             </div>
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {pacotes.map((pacote, index) => (
