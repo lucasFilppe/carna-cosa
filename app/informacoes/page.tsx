@@ -55,11 +55,11 @@ const Informacoes = () => {
                   <div key={index} className="border-b border-gray-300 pb-4">
                     <button
                       onClick={() => toggleFAQ(index)}
-                      className="w-full text-customBlue flex justify-between items-center text-lg font-semibold text-left focus:outline-none"
+                      className="w-full text-customBlue flex justify-between items-center text-sm font-semibold text-left focus:outline-none"
                     >
                       {item.question}
                       <span
-                        className={`ml-2 transition-transform ${
+                        className={`ml-2  text-sm transition-transform ${
                           activeIndex === index ? "rotate-180" : ""
                         }`}
                       >

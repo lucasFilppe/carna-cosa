@@ -17,7 +17,7 @@ export default function PacoteCard({ titulo, tipo, items }: Pacote) {
       <ul className="list-disc list-inside text-gray-700">
         {items.map((item, index) => (
           <li key={index} className="flex items-center gap-2"> {/* Alterei aqui */}
-            {item.emoji && <span className="text-3xl">{item.emoji}</span>}
+            {item.emoji && <span className="text-sm">{item.emoji}</span>}
             <span>{item.text}</span>
           </li>
         ))}

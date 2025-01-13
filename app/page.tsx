@@ -34,18 +34,33 @@ export default function Home() {
           {/* Coluna do Texto */}
           <div className="">
             <h1 className="text-xl font-bold text-center  text-customBlue mb-4">
-              Carnaval em Ouro Preto: Blocos, Pacotes e Festas Imperdíveis
+              "Carnaval de Ouro Preto: A Experiência Universitária que Você
+              Nunca Esquecerá!"
             </h1>
-            <p className=" text-white">
-              O Carnaval de Ouro Preto é uma experiência única, repleta de
-              energia e tradição! 5 dias de Hospedagem no carnaval universitário
-              de Ouro Preto, com localização privilegiada onde, diferente de
-              qualquer outro lugar, você irá sentir a verdadeira energia de um
-              carnaval universitário ouro-pretano! Uma experiência cultural
-              única e inesquecível onde, carnaval passado, mais de 600 pessoas
-              experimentaram a alegria do nosso pacote republicano e essa
-              experiência é surreal. Com um OPEN BAR SURREAL, durante todo o
-              carnaval e os 4 maiores Blocos de Ouro Preto.
+            <p className="text-gray-100 text-base sm:text-lg leading-relaxed mb-6">
+              O{" "}
+              <span className="font-bold text-customBlue">
+                Carnaval de Ouro Preto
+              </span>{" "}
+              é uma experiência <span className="italic">inesquecível</span>,
+              repleta de energia, cultura e tradição! Oferecemos{" "}
+              <span className="font-bold text-customBlue">5 dias de hospedagem</span> no coração
+              do carnaval universitário, em uma localização privilegiada, que
+              permite vivenciar como nunca antes a vibração única desse evento
+              ouro-pretano. No ano passado, mais de{" "}
+              <span className="font-bold text-customBlue">600 pessoas </span>
+              participaram do nosso pacote republicano e se encantaram com essa
+              vivência extraordinária. Prepare-se para um{" "}
+              <span className="uppercase font-semibold text-customBlue">
+              OPEN BAR incrível
+              </span>
+              {" "}durante todos os dias de folia e para curtir os
+              <span className="font-bold text-customBlue">
+                {" "}
+                quatro maiores blocos de Ouro Preto
+              </span>
+              . Venha viver um carnaval universitário que ficará marcado para
+              sempre na sua memória!
             </p>
           </div>
 
