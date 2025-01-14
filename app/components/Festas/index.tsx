@@ -1,35 +1,25 @@
-import Image from "next/image";
+"use client";
+
+import { FC } from "react";
+import Carousel from "../Carrocel/index";
 
 const images = [
-  "/festas/image-1.jpg",
-  "/festas/image-2.jpg",
-  "/festas/image-3.jpg",
-  "/festas/image-4.jpg",
-  "/festas/image-5.jpg",
-  "/festas/image-6.jpg",
+  { src: "/festas/image-1.png", alt: "Imagem 1" },
+  { src: "/festas/image-2.png", alt: "Imagem 2" },
+  { src: "/festas/image-3.png", alt: "Imagem 3" },
+  { src: "/festas/after.jpg", alt: "Imagem 4" },
+  { src: "/festas/image-4.png", alt: "Imagem 5" },
+  { src: "/festas/image-5.png", alt: "Imagem 6" },
+
 ];
 
-const ImageGallery = () => {
+const ImageGallery: FC = () => {
   return (
     <div className="container mx-auto p-7">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {images.map((src, index) => (
-          <div
-            key={index}
-            className="relative overflow-hidden rounded-lg shadow-md w-full h-60"
-          >
-            <Image
-              src={src}
-              alt={`Imagem ${index + 1}`}
-              width={400} // Define a largura da imagem
-              height={300} // Define a altura da imagem
-              className="rounded-lg  w-full h-full object-cover" // Mantém as bordas arredondadas para cada imagem
-            />
-          </div>
-        ))}
-      </div>
+      <Carousel images={images} />
     </div>
   );
 };
 
 export default ImageGallery;
+
