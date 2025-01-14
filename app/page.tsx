@@ -38,32 +38,16 @@ export default function Home() {
               Nunca Esquecerá!"
             </h1>
             <p className="text-gray-100 text-sm leading-relaxed mb-6">
-              O{" "}
-              <span className="font-bold text-customBlue">
-                Carnaval de Ouro Preto
-              </span>{" "}
-              é uma experiência <span className="italic">inesquecível</span>,
-              repleta de energia, cultura e tradição! Oferecemos{" "}
-              <span className="font-bold text-customBlue">5 dias de hospedagem</span> no coração
-              do carnaval universitário, em uma localização privilegiada, que
-              permite vivenciar como nunca antes a vibração única desse evento
-              ouro-pretano. No ano passado, mais de{" "}
-              <span className="font-bold text-customBlue">600 pessoas </span>
-              participaram do nosso pacote republicano e se encantaram com essa
-              vivência extraordinária. Prepare-se para um{" "}
-              <span className="uppercase font-semibold text-customBlue">
-              OPEN BAR incrível
-              </span>
-              {" "}durante todos os dias de folia e para curtir os
-              <span className="font-bold text-customBlue">
-                {" "}
-                quatro maiores blocos de Ouro Preto
-              </span>
-              . Venha viver um carnaval universitário que ficará marcado para
-              sempre na sua memória!
+              O Carnaval de Ouro Preto é uma experiência única, repleta de
+              energia e tradição! E a <span className="font-bold text-customBlue">República Cosa Nostra </span> oferece 5 dias de
+              <span className="font-bold text-customBlue"> hospedagem,</span>em localização privilegiada e com todos os confortos e
+              amenidades pra você sentir a verdadeira vibe do <span className="font-bold text-customBlue">carnaval universitário </span>
+              mais famoso do Brasil! Em 2024, mais de 600 pessoas
+              tiveram a experiência surreal que os nossos pacotes oferecem,
+              podendo desfrutar de um <span className="font-bold text-customBlue">OPEN BAR F#DA</span> durante todo o carnaval,
+              além dos 4 maiores e mais famosos blocos de Ouro Preto.
             </p>
           </div>
-
           {/* Coluna do Vídeo */}
           <div className="flex justify-center mt-3">
             <div className="relative w-full max-w-2xl">
@@ -96,3 +80,4 @@ export default function Home() {
     </>
   );
 }
+
