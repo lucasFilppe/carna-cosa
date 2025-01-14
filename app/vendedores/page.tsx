@@ -35,7 +35,7 @@ const Vendedores = () => {
       <h2 className="text-sm lg:text-2xl font-semibold text-center text-customBlue">
         (Pacotes)
       </h2>
-      <button className="flex items-center text-white font-bold rounded p-2 transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
+      <button className="flex items-center text-white font-bold rounded bg-white transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
         <a
           href="https://wa.me/5531972041833"
           target="_blank"
@@ -50,7 +50,7 @@ const Vendedores = () => {
     <div className="bg-black flex flex-col items-center p-4 rounded-lg min-h-[250px]">
       <div className="relative w-full flex justify-center">
         <Image
-          src="/arkimedes.jpg"
+          src="/arquimedes.jpg"
           alt="foto de Pedro Marciano"
           width={96}
           height={96}
@@ -64,7 +64,7 @@ const Vendedores = () => {
       <h2 className="text-sm lg:text-2xl font-semibold text-center text-customBlue">
         (Festas)
       </h2>
-      <button className="flex items-center text-white font-bold rounded p-2 transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
+      <button className="flex items-center text-white font-bold rounded bg-white transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
         <a
           href="https://wa.me/5531999119767"
           target="_blank"
@@ -93,7 +93,7 @@ const Vendedores = () => {
       <h2 className="text-sm lg:text-2xl font-semibold text-center text-customBlue">
         (Excursões)
       </h2>
-      <button className="flex items-center text-white font-bold rounded p-2 transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
+      <button className="flex items-center bg-white text-white font-bold rounded  transition-transform duration-300 hover:scale-105 hover:bg-green-500 hover:text-white">
         <a
           href="https://wa.me/5537998418715"
           target="_blank"

@@ -5,11 +5,10 @@ import Carousel from "../Carrocel/index";
 
 const images = [
   { src: "/festas/image-1.png", alt: "Imagem 1" },
-  { src: "/festas/image-2.png", alt: "Imagem 2" },
-  { src: "/festas/image-3.png", alt: "Imagem 3" },
-  { src: "/festas/after.jpg", alt: "Imagem 4" },
-  { src: "/festas/image-4.png", alt: "Imagem 5" },
-  { src: "/festas/image-5.png", alt: "Imagem 6" },
+  { src: "/festas/image-2.jpeg", alt: "Imagem 2" },
+  { src: "/festas/after.jpg", alt: "Imagem 3" },
+  { src: "/festas/image-3.jpeg", alt: "Imagem 4" },
+  { src: "/festas/image-5.jpeg", alt: "Imagem 5" },
 
 ];
 
