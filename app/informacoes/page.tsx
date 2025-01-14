@@ -23,7 +23,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Posso personalizar meu abadá?",
-    answer: "Sim, e claro!. Desde que seja mantido a logo do Bloco no abadá"
+    answer: "Sim, claro! Desde que seja mantido a logo do Bloco no abadá"
   },
 
 

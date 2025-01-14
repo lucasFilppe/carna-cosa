@@ -40,12 +40,12 @@ export default function Home() {
             <p className="text-gray-100 text-sm leading-relaxed mb-6">
               O Carnaval de Ouro Preto é uma experiência única, repleta de
               energia e tradição! E a <span className="font-bold text-customBlue">República Cosa Nostra </span> oferece 5 dias de
-              <span className="font-bold text-customBlue"> hospedagem,</span>em localização privilegiada e com todos os confortos e
+              <span className="font-bold text-customBlue"> hospedagem </span>em localização privilegiada e com todos os confortos e
               amenidades pra você sentir a verdadeira vibe do <span className="font-bold text-customBlue">carnaval universitário </span>
               mais famoso do Brasil! Em 2024, mais de 600 pessoas
               tiveram a experiência surreal que os nossos pacotes oferecem,
               podendo desfrutar de um <span className="font-bold text-customBlue">OPEN BAR F#DA</span> durante todo o carnaval,
-              além dos 4 maiores e mais famosos blocos de Ouro Preto.
+              além dos <span className="font-bold text-customBlue"> 4 maiores blocos </span> de Ouro Preto.
             </p>
           </div>
           {/* Coluna do Vídeo */}
