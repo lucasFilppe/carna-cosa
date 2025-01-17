@@ -20,11 +20,11 @@ const Festas = () => {
           <div className="max-w-4xl mx-auto my-5 text-center">
             <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
               <a
-                href="https://wa.me/5531999119767"
+                href="https://cheers.com.br/evento/carna-cosa-festas-noturnas-20757"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Comprar festas
+                Atrações
               </a>
             </button>
           </div>

@@ -10,7 +10,6 @@ const images = [
   { src: "/festas/after.jpg", alt: "Imagem 3" },
   { src: "/festas/image-4.png", alt: "Imagem 4" },
   { src: "/festas/image-5.jpeg", alt: "Imagem 5" },
-
 ];
 
 const ImageGallery: FC = () => {
@@ -22,4 +21,3 @@ const ImageGallery: FC = () => {
 };
 
 export default ImageGallery;
-
