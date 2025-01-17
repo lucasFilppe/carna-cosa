@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useRef } from "react";
+import Excursions from "./excursoes/page";
 
 // Importações dinâmicas dos componentes
 const Blocos = dynamic(() => import("./blocos/page"));
@@ -74,7 +75,7 @@ export default function Home() {
         <Festas />
         <Fotos />
         <Vendedores />
-        {/*<Excursoes />*/}
+        <Excursions/>
         <Informacoes />
       </div>
     </>
