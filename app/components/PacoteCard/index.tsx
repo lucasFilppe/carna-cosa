@@ -23,7 +23,7 @@ export default function PacoteCard({ titulo, tipo, items }: Pacote) {
         ))}
       </ul>
       <div className="max-w-4xl mx-auto my-5 text-center">
-        <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
+        <button className="bg-customBlue text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
           <a
             href="https://wa.me/5531972041833"
             target="_blank"

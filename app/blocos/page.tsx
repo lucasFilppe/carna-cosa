@@ -19,9 +19,9 @@ const Blocos = () => {
       lineUp: "/line-cabrobro.jpg",
       drinks: {
         pista:
-          "Open Bar Premium: Cerveja, vodka, energético, água e muito mais. Acesso a frente do palco",
+          "Cerveja, vodka, energético, água e muito mais. Acesso a frente do palco",
       camarote:
-          "Open Bar Premium: Cerveja, vodka, whisky, gin, tequila, bebida ice, energético, suco, água e muito mais, Espaço coberto, Entrada e banheiros exclusivos, Surpresas e mimos especiais",
+        "Cerveja, vodka, whisky, gin, tequila, bebida ice, energético, suco, água e muito mais, Espaço coberto, Entrada e banheiros exclusivos, Surpresas e mimos especiais",
       },
     },
     {
@@ -40,8 +40,8 @@ const Blocos = () => {
       imgSrc: "/bloco-chapado.jpg",
       lineUp: "/line-chapado.jpg",
       drinks: {
-        pista: " 100% OPEN BAR",
-        camarote: "CAMAROTE 100% OPEN BAR PREMIUM",
+        pista: " 100% OPEN BAR - Cerveja Budwiser, Xeque-mate",
+        camarote: "CAMAROTE 100% OPEN BAR PREMIUM Cerveja Budwiser, Xeque-mate",
       },
     },
   ];
@@ -104,13 +104,13 @@ const Blocos = () => {
         </div>
 
         <div className="max-w-4xl mx-auto text-center mt-6">
-          <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
+          <button className="bg-customBlue text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
             <a
               href="https://wa.me/5531996186158"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Comprar Blocos
+              Comprar Bloco
             </a>
           </button>
         </div>

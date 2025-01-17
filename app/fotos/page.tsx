@@ -104,7 +104,7 @@ const Fotos = () => {
 
           {/* Botão de Comprar Pacote */}
           <div className="max-w-4xl mx-auto mt-10 text-center">
-            <button className="bg-pink-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
+            <button className="bg-customBlue text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
               <Link href="/galeria">Veja mais...</Link>
             </button>
           </div>
