@@ -11,7 +11,8 @@ const Festas = () => {
       <main>
         <section
           id="festas"
-          className="mt-10"
+          className="mt-10 md:mt-6 lg:mt-4"
+
         >
           <h1 className="text-xl font-bold flex items-center justify-center text-center text-customBlue">
             Festas

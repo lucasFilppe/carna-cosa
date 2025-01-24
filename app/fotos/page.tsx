@@ -15,13 +15,13 @@ const Fotos = () => {
       <main>
         {/* Seção Fotos */}
         <section id="fotos" className="mt-10">
-          <h1 className="text-xl font-bold mb-5 mt-5 flex items-center justify-center text-center text-customBlue">
+          <h1 className="text-xl font-bold  flex items-center justify-center text-center text-customBlue">
             Galeria de Fotos
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-5 gap-2 mt-6">
+          <div className="grid  sm:grid-cols-5 gap-2 mt-6">
             <Image
               src="/galeria/foto2.JPG"
-              alt="Post 1"
+              alt="Festa de uma mulher segurando caneca no carnaval da Republíca Cosa Nostra"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -29,7 +29,7 @@ const Fotos = () => {
 
             <Image
               src="/galeria/foto10.jpg"
-              alt="Post 2"
+              alt="Foto de duas mulheres abraçadas"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -37,7 +37,7 @@ const Fotos = () => {
 
             <Image
               src="/galeria/foto1.jpg"
-              alt="Post 2"
+              alt="Dj GUi Marques tocando na Cosa nostra"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -45,7 +45,7 @@ const Fotos = () => {
 
             <Image
               src="/galeria/foto5.jpg"
-              alt="Post 2"
+              alt="Grupo de amigos na Cosa nostra"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -53,7 +53,7 @@ const Fotos = () => {
 
             <Image
               src="/galeria/foto6.jpg"
-              alt="Post 3"
+              alt="Mulher de biquine na festa da espuma da cosa nostra"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -61,7 +61,7 @@ const Fotos = () => {
 
             <Image
               src="/galeria/foto13.png"
-              alt="Post 3"
+              alt="Mulher usando fantasia com uma boia de pato"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -69,7 +69,7 @@ const Fotos = () => {
 
             <Image
               src="/galeria/foto8.jpg"
-              alt="Post 3"
+              alt="Três amigas sorrindo"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -77,7 +77,7 @@ const Fotos = () => {
 
             <Image
               src="/galeria/foto12.jpg"
-              alt="Post 3"
+              alt="Mulher sorrindo"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -85,7 +85,7 @@ const Fotos = () => {
 
             <Image
               src="/galeria/foto14.png"
-              alt="Post 3"
+              alt="Grupo de amigas fantasiadas"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -93,7 +93,7 @@ const Fotos = () => {
 
             <Image
               src="/galeria/foto15.png"
-              alt="Post 3"
+              alt="Dois amigos sorrindo"
               width={400} // Define a largura da imagem
               height={300} // Define a altura da imagem
               className="rounded-md border-4 border-transparent hover:border-customBlue transition-all duration-300 w-full h-full object-cover"
@@ -105,7 +105,7 @@ const Fotos = () => {
           {/* Botão de Comprar Pacote */}
           <div className="max-w-4xl mx-auto mt-10 text-center">
             <button className="bg-customBlue text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
-              <Link href="/galeria">Veja mais...</Link>
+              <Link href="/galeria">Veja mais fotos</Link>
             </button>
           </div>
         </section>

@@ -27,16 +27,25 @@ const Carousel: FC<CarouselProps> = ({ images }) => {
   return (
     <div className="relative">
       {/* Estrutura para dispositivos médios e maiores */}
-      <div className="hidden md:flex overflow-hidden">
-        <div className="flex animate-scroll gap-4">
+      <div className="hidden md:flex overflow-hidden relative">
+        <div
+          className="flex gap-4 animate-scroll"
+          style={{
+            width: `${images.length * 200}%`,
+            animation: `scroll-infinite ${images.length * 2}s linear infinite`,
+          }}
+        >
           {images.concat(images).map((image, index) => (
-            <div key={index} className="flex-shrink-0">
+            <div
+              key={index}
+              className="flex-shrink-0 w-[25%]" // Ajuste para cada imagem ocupar um quarto da largura
+            >
               <Image
                 src={image.src}
                 alt={image.alt}
                 width={400}
                 height={300}
-                className="object-cover"
+                className="object-cover w-full h-full"
               />
             </div>
           ))}

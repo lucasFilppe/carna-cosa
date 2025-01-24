@@ -33,14 +33,15 @@ section {
   scroll-margin-top: 64px; /* Altura da NavBar */
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
+@keyframes scroll-infinite {
+  from {
+    transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%);
   }
 }
+
 
 .animate-scroll {
   display: flex;
