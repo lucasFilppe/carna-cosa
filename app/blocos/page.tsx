@@ -20,8 +20,8 @@ const Blocos = () => {
       drinks: {
         pista:
           "Cerveja, vodka, energético, água e muito mais. Acesso a frente do palco",
-      camarote:
-        "Cerveja, vodka, whisky, gin, tequila, bebida ice, energético, suco, água e muito mais, Espaço coberto, Entrada e banheiros exclusivos, Surpresas e mimos especiais",
+        camarote:
+          "Cerveja, vodka, whisky, gin, tequila, bebida ice, energético, suco, água e muito mais, Espaço coberto, Entrada e banheiros exclusivos, Surpresas e mimos especiais",
       },
     },
     {
@@ -88,16 +88,15 @@ const Blocos = () => {
                 <h3 className="text-lg font-semibold text-customBlue">
                   Bebidas
                 </h3>
-                <div className="mt-2">
-                  <p className="text-sm text-white">
-                    <span className="font-bold text-customBlue">Pista:</span>{" "}
-                    {bloco.drinks.pista}
+                <div className="mt-2 flex flex-col items-center">
+                  <p className="text-sm text-white max-w-lg text-center">
+                    <span className="font-bold text-customBlue">Pista:</span> {bloco.drinks.pista}
                   </p>
-                  <p className="text-sm text-white mt-2">
-                    <span className="font-bold text-customBlue">Camarote:</span>{" "}
-                    {bloco.drinks.camarote}
+                  <p className="text-sm text-white mt-2 max-w-lg text-center">
+                    <span className="font-bold text-customBlue">Camarote:</span> {bloco.drinks.camarote}
                   </p>
                 </div>
+
               </div>
             </div>
           ))}

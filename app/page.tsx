@@ -31,12 +31,12 @@ export default function Home() {
         {/*<NavBar />*/}
 
         {/* Seção Início */}
-        <section id="inicial" className=" p-5">
+        <section id="inicial" className=" p-5 flex flex-col items-center">
           {/* Coluna do Texto */}
-          <div className="">
+          <div className="w-full max-w-lg text-center">
             <h1 className="text-xl font-bold text-center  text-customBlue mb-4">
-              "Carnaval de Ouro Preto: A Experiência Universitária que Você
-              Nunca Esquecerá!"
+              Carnaval de Ouro Preto: A Experiência Universitária que Você
+              Nunca Esquecerá!
             </h1>
             <p className="text-gray-100 text-sm leading-relaxed mb-6">
               O Carnaval de Ouro Preto é uma experiência única, repleta de
