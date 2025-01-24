@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useRef } from "react";
+import ConfettiEffect from "./components/ConfetttiEffect/index";
 import Excursions from "./excursoes/page";
 
 // Importações dinâmicas dos componentes
@@ -27,6 +28,7 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen flex flex-col bg-gray-white font-geist pt-10">
+        <ConfettiEffect/>
         {/* Ajuste a margem conforme necessário */}
         {/*<NavBar />*/}
 
