@@ -64,19 +64,18 @@ const Carousel: FC<CarouselProps> = ({ images }) => {
         />
         <div
           className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2"
-          role="group"
-          aria-label="Controles de navegação do carrossel"
+          role="status"
+          aria-label="Indicadores de navegação do carrossel"
         >
           {images.map((_, index) => (
-            <button
+            <span
               key={index}
-              onClick={() => setCurrentIndex(index)}
               className={`h-3 w-3 rounded-full transition-all duration-300 ${
                 currentIndex === index
                   ? "bg-blue-500 scale-125 ring-2 ring-blue-500"
                   : "bg-gray-300"
               }`}
-              aria-label={`Ir para a imagem ${index + 1}`}
+              aria-label={`Indicador para a imagem ${index + 1}`}
               aria-current={currentIndex === index ? "true" : undefined}
             />
           ))}
@@ -87,8 +86,3 @@ const Carousel: FC<CarouselProps> = ({ images }) => {
 };
 
 export default Carousel;
-
-
-
-
-
