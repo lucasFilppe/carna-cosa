@@ -81,7 +81,7 @@ export default function Home() {
                 🎓.
               </li>
             </ul>
-            <p className="text-gray font-semibold text-lg">
+            <p className="text-customBlue font-semibold text-lg">
               Garanta sua vaga e venha viver essa festa épica com a gente! 💃🕺
             </p>
           </div>
@@ -106,9 +106,10 @@ export default function Home() {
         </section>
 
         {/* Componentes carregados dinamicamente */}
+        <Festas />
         <Blocos />
         <Pacotes />
-        <Festas />
+        
         <Fotos />
         <Vendedores />
         <Excursions />

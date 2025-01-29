@@ -15,8 +15,9 @@ const Festas = () => {
 
         >
           <h1 className="text-xl font-bold flex items-center justify-center text-center text-customBlue">
-            Festas
+          Viva momentos inesquecíveis nas nossas festas!
           </h1>
+          <p className="p-3 text-white text-sm font-bold flex items-center justify-center text-center">De festas temáticas a eventos exclusivos, cada momento é preparado para você se divertir ao máximo. Escolha sua favorita e reserve já!</p>
           <ImageGallery />
           <div className="max-w-4xl mx-auto my-5 text-center">
             <button className="bg-customBlue text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-pink-700 transition duration-200">
@@ -25,7 +26,7 @@ const Festas = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Atrações
+                Reserve seu ingresso agora
               </a>
             </button>
           </div>
