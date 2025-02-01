@@ -55,25 +55,25 @@ export default function Home() {
             </p>
           </div>
           <div className="bg-white p-5 rounded-lg shadow-lg">
-            <p className="list-disc list-inside text-gray text-sm leading-relaxed mb-4">
+            <p className="list-disc list-inside text-gray-600 text-sm leading-relaxed mb-4">
               Mais de{" "}
               <span className="font-bold text-customBlue">600 foliões</span> já
               tiveram uma experiência incrível em 2024. E você? Está pronto
               para:
             </p>
             <ul className="list-disc list-inside text-gray text-sm mb-4">
-              <li>
+              <li className="text-gray-600">
                 <span className="font-bold text-customBlue">OPEN BAR F#DA</span>{" "}
                 durante todos os dias de folia 🍹🍺;
               </li>
-              <li>
+              <li className="text-gray-600">
                 Acesso garantido aos{" "}
                 <span className="font-bold text-customBlue">
                   4 maiores blocos
                 </span>{" "}
                 de Ouro Preto 🎭;
               </li>
-              <li>
+              <li className="text-gray-600">
                 Conectar-se com a vibe autêntica e contagiante do{" "}
                 <span className="font-bold text-customBlue">
                   carnaval universitário
