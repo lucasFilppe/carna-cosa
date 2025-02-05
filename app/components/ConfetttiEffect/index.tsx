@@ -5,7 +5,7 @@ import confetti from "canvas-confetti";
 
 const ConfettiEffect = () => {
   useEffect(() => {
-    const duration = 10 * 1000; // 15 segundos
+    const duration = 5 * 1000; // 15 segundos
     const animationEnd = Date.now() + duration;
 
     function randomInRange(min: number, max: number) {
